@@ -40,16 +40,16 @@ body{
     border-radius: 6px;
 }
 
-.menu{
+/* .menu{
     background-color: rgb(191, 194, 197);
     width: 500px;
     height: 530px;
     margin: 0 auto;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
-}
+} */
 
-#inicio{
+/* #inicio{
     background-color: aquamarine;
     cursor: pointer;
     text-align: center;
@@ -62,17 +62,18 @@ body{
     border-top-left-radius: 6px;
     border: none;
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 
-.menu_opcoes{
+/* .menu_opcoes{
     background-color: aliceblue;
     width: 400px;
     height: 200px;
     margin: 0 auto;
     margin-top: 50px;
-    padding: 10px;
+    padding: 1px;
     position: relative;
     top: -20px;
+    border-width: 2px;
     border-style: inset;
     border-radius: 6px;
     border-color: black;
@@ -89,6 +90,347 @@ body{
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
     background-color: #142850;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.menu{
+    width:500px;
+    background:white;
+    border-radius:28px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(79,70,229,0.15);
+    position:relative;
+    position: relative;
+    left: 660px;
+    top: 100px;
+}
+
+/* TOPO */
+
+.logo-area{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.logo-icon{
+    width:90px;
+    height:90px;
+
+    margin:auto;
+    margin-bottom:18px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(135deg,#4f46e5,#6366f1);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+
+    box-shadow:
+    0 10px 25px rgba(79,70,229,0.3);
+}
+
+#inicio{
+    font-size:42px;
+    color:#0f172a;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.subtitulo{
+    color:#64748b;
+    font-size:16px;
+    line-height:1.5;
+}
+
+.menu_opcoes{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    width: 465px;
+}
+
+.card-btn{
+    width:100%;
+    padding:22px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    transition:0.3s ease;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card-btn:hover{
+    transform:translateY(-5px) scale(1.01);
+}
+
+/* PRIMEIRO CARD */
+
+.iniciar{
+    background:
+    linear-gradient(135deg,#4f46e5,#4338ca);
+
+    color:white;
+}
+
+/* SEGUNDO CARD */
+
+.sobre{
+    background:
+    linear-gradient(135deg,#d1fae5,#a7f3d0);
+
+    color:#064e3b;
+}
+
+/* ÍCONES */
+
+.icon{
+    font-size:32px;
+}
+
+/* TEXTOS */
+
+.textos{
+    flex:1;
+    margin-left:18px;
+}
+
+.textos h2{
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.textos p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* SETA */
+
+.seta{
+    font-size:28px;
+}
+
+/* FRASE FINAL */
+
+.frase{
+    margin-top:30px;
+    text-align:center;
+
+    color:#64748b;
+
+    font-size:15px;
+    font-weight:500;
+}
+
+/* CARD PRINCIPAL */
+
+.menu{
+    width:520px;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    position:relative;
+    z-index:1;
+
+    box-shadow:
+    0 15px 40px rgba(79,70,229,0.15);
+}
+
+.menu-sobre{
+    width:520px;
+    background:white;
+    border-radius:30px;
+    padding:40px;
+    position:relative;
+    left: 667px;
+    z-index:1;
+    box-shadow:
+    0 15px 40px rgba(79,70,229,0.15);
+}
+
+/* TOPO */
+
+.topo{
+    text-align:center;
+    margin-bottom:35px;
+    position: relative;
+    top: -30px;
+}
+
+.icone{
+    width:95px;
+    height:95px;
+    margin:auto;
+    margin-bottom:20px;
+    border-radius:50%;
+    background:
+    linear-gradient(135deg,#4f46e5,#6366f1);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    color:white;
+    box-shadow:
+    0 10px 25px rgba(79,70,229,0.3);
+}
+
+#inicio{
+    font-size:40px;
+    color:#0f172a;
+    margin-bottom:12px;
+}
+
+.subtitulo{
+    color:#64748b;
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* CARDS DE INFORMAÇÃO */
+
+.texto_sobre{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/* CARD INFO */
+
+.info-card{
+    background:#f8fafc;
+    border-radius:18px;
+    padding:18px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    border:2px solid #eef2ff;
+}
+
+.info-card h2{
+    color:#0f172a;
+    font-size:20px;
+    margin-bottom:4px;
+}
+
+.info-card p{
+    color:#64748b;
+    font-size:15px;
+}
+
+/* ÍCONES */
+
+.emoji{
+    width:60px;
+    height:60px;
+
+    border-radius:16px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+
+    background:white;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* CARDS SOCIAIS */
+
+.social-card{
+    text-decoration:none;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    display:flex;
+    align-items:center;
+
+    gap:18px;
+
+    transition:0.3s ease;
+}
+
+.social-card:hover{
+    transform:translateY(-4px);
+}
+
+/* GITHUB */
+
+.github{
+    background:
+    linear-gradient(135deg,#4f46e5,#4338ca);
+
+    color:white;
+}
+
+/* LINKEDIN */
+
+.linkedin{
+    background:
+    linear-gradient(135deg,#0ea5e9,#0284c7);
+
+    color:white;
+}
+
+.social-card h2{
+    font-size:22px;
+    margin-bottom:4px;
+}
+
+.social-card p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* SETA */
+
+.seta{
+    margin-left:auto;
+    font-size:26px;
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar{
+    margin-top:30px;
+    width:100%;
+    height:58px;
+    border-radius:16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    background:#e2e8f0;
+    color:#0f172a;
+    font-weight:600;
+    transition:0.3s;
+    font-size: 20px;
+}
+
+.btn-voltar:hover{
+    background:#cbd5e1;
+    transform:translateY(-2px);
 }
 
 a{
@@ -106,19 +448,6 @@ a{
 
 .menu_opcoes button:hover{
     background-color: #f16305;
-}
-
-.texto_sobre{
-    font-family: 'Times New Roman', Times, serif;
-    width: 350px;
-    background-color: aliceblue;
-    position: relative;
-    top: 20px;
-    text-align: center;
-    margin: 0 auto;
-    border-style: inset;
-    border-color: black;
-    border-radius: 6px;
 }
 
 .conteudo{

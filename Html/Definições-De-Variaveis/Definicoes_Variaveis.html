@@ -9,70 +9,86 @@
     <title> Definições de Variaveis </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Definições de Variaveis </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Uma variável é um espaço na memória do computador usado para armazenar um valor. Esse valor pode ser alterado ao longo da execução do programa.</p>
-                    <div class="area">
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo">Definições de Variáveis</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                    <p>Uma variável é um espaço na memória do computador usado para armazenar um valor. Esse valor pode ser alterado ao longo da execução do programa.</p>
+                    
+                    <div class="editor-codigo">
                         <code>
-                            <div id="comentario">//Declarando variáveis com let</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"Wallace"</div>;
-                            <br>
-                            <div id="let">let</div> idade <div id="resultante">=</div> <div id="valor">26</div>;
-                            <br>
-                            <div id="let">let</div> altura <div id="resultante">=</div> <div id="valor">1.75</div>;
-                            <br>
-                            <br>
-                            <div id="comentario">//Exibindo os valores no console</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Nome: "</div>, nome);
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Idade: "</div>, idade);
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Altura: "</div>, altura);
-                            <br>
+                            <span class="comentario">//Declarando variáveis com let</span><br><br>
+                            <span class="keyword">let</span> nome <span class="operador">=</span> <span class="string">"Wallace"</span>;<br>
+                            <span class="keyword">let</span> idade <span class="operador">=</span> <span class="numero">26</span>;<br>
+                            <span class="keyword">let</span> altura <span class="operador">=</span> <span class="numero">1.75</span>;<br><br>
+                            <span class="comentario">//Exibindo os valores no console</span><br><br>
+                            <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"Nome: "</span>, nome);<br>
+                            <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"Idade: "</span>, idade);<br>
+                            <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"Altura: "</span>, altura);
                         </code>
                     </div>
-                    <p>Aqui, nome, idade e altura são variáveis que armazenam diferentes tipos de dados.</p>
-                    <p style="display: inline-block;">No JavaScript, podemos declarar variáveis usando três palavras-chave principais: 
-                        <br>
-                        <br>
-                        <b>Var</b> = Forma antiga, evita-se usar hoje em dia;
-                        <br>
-                        <b>Let</b> = Recomendada para valores que podem mudar;
-                        <br>
-                        <b>Const</b> = Usada para valores que não podem ser alteradas.
+
+                    <p class="legenda">Aqui, nome, idade e altura são variáveis que armazenam diferentes tipos de dados.</p>
+                    
+                    <p>No JavaScript, podemos declarar variáveis usando três palavras-chave principais:</p>
+                    
+                    <ul class="lista-definicoes">
+                        <li>🛠️ <strong>Var</strong> = Forma antiga, evita-se usar hoje em dia;</li>
+                        <li>💡 <strong>Let</strong> = Recomendada para valores que podem mudar;</li>
+                        <li>🛡️ <strong>Const</strong> = Usada para valores que não podem ser alteradas.</li>
+                    </ul>
+
+                    <div class="editor-codigo">
+                        <code>
+                            <span class="keyword">var</span> nome1 <span class="operador">=</span> <span class="string">"Pedro"</span>; <span class="comentario">//Pode ser redeclarado (evitar usar)</span><br><br>
+                            <span class="keyword">let</span> nome2 <span class="operador">=</span> <span class="string">"Lucas"</span>; <span class="comentario">//Pode mudar de valor</span><br><br>
+                            <span class="keyword">const</span> nome3 <span class="operador">=</span> <span class="string">"Lucas"</span>; <span class="comentario">//Não pode ser alterado</span>
+                        </code>
+                    </div>
+
+                    <p class="dica"><strong>Dica:</strong> Use <code>let</code> para valores que podem mudar e <code>const</code> para valores fixos.</p>
+                    
+                    <p class="saiba-mais">
+                        <strong>Para saber mais sobre o assunto:</strong> 
+                        <a href="https://www.w3schools.com/js/js_variables.asp" target="_blank" id="link">Definições de variáveis</a>
                     </p>
-                    <div class="area">
-                        <code>
-                            <div id="let">var</div> nome1 <div id="resultante">=</div> <div id="string">"Pedro"</div> <div id="comentario">//Pode ser redeclarado (evitar usar)</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> nome2 <div id="resultante">=</div> <div id="string"> "Lucas" </div> <div id="comentario">//Pode mudar de valor</div>
-                            <br>
-                            <br>
-                            <div id="let">const</div> nome3 <div id="resultante">=</div> <div id="string"> "Lucas" </div> <div id="comentario">//Não pode ser alterado</div>
-                            <br>
-                        </code>
-                    </div>
-                    <p><b>Dica</b>- Use let para valores que podem mudar e const para valores fixos.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_variables.asp" target="_blank" id="link"> Definições de variaveis</a> </p>
-                </scroll-container>    
+                </div>
             </div>
-            <div class="assuntos">
-                <button id="assunto"><a href="Definicoes_Variaveis.html"><p>Variaveis</p></a></button>
-                <button id="assunto"><a href="Console.log.html"><p>Console.log()</p></a></button>
-                <button id="assunto"><a href="Alert.html"><p>Alert()</p></a></button>
-            </div>
-            <button id="anterior" style="left: -598px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_alert.html"><p>Pratica</p></a></button>
+
+                <div class="alinhamento-proxima">
+                    <button id="proxima" class="btn-navegacao">
+                        <a href="../Blocos/Pratica_alert.html">Prática</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto ativo"><a href="Definicoes_Variaveis.html">Variáveis</a></button>
+                        <button class="btn-assunto"><a href="Console.log.html">Console.log()</a></button>
+                        <button class="btn-assunto"><a href="Alert.html">Alert()</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>
+
+
 </html>

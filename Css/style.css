@@ -16,20 +16,6 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* #titulo_bem_vindo{
-    background-color: aquamarine;
-    cursor: pointer;
-    text-align: center;
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 140px;
-    padding: 10px;
-    border-style: inset;
-    border-radius: 8px;
-    border: none;
-    font-family: 'Times New Roman', Times, serif;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .menu{
@@ -587,6 +573,267 @@ a{
     transform:translateY(-2px);
 }
 
+.container-principal {
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    left: 260px;
+    top: 50px;
+}
+
+/* Cabeçalho */
+.header-app {
+    margin-bottom: 25px;
+}
+
+.header-app h1 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+/* Layout em Grid (Esquerda, Centro, Direita) */
+.layout-conteudo {
+    display: grid;
+    grid-template-columns: 220px 1fr 240px;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Coluna do Avatar */
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.avatar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    object-fit: contain;
+}
+
+/* Card Central de Conteúdo */
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-educativo {
+    background-color: #fbf5eb;
+    border: 1px solid #e6dbcb;
+    border-radius: 12px;
+    padding: 0; /* Removemos o padding daqui para não quebrar a barra de rolagem */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    height: 500px; /* Define a altura fixa do container (ajuste como preferir) */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+}
+
+/* Nova classe que controla a rolagem interna e estiliza a barra */
+.scroll-interno {
+    padding: 30px; /* O padding interno fica aqui agora */
+    overflow-y: auto; /* Ativa o scroll vertical quando o texto ultrapassar a altura */
+    height: 100%;
+}
+
+/* Opcional: Deixar a barra de rolagem mais bonita e combinando com o tema */
+.scroll-interno::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll-interno::-webkit-scrollbar-track {
+    background: #fbf5eb; 
+    border-radius: 0 12px 12px 0;
+}
+ 
+.scroll-interno::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 10px;
+    border: 2px solid #fbf5eb;
+}
+
+.scroll-interno::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
+}
+
+.card-educativo p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card-educativo p.legenda {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Lista de Definições (var, let, const) */
+.lista-definicoes {
+    list-style: none;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-definicoes li {
+    font-size: 1.05rem;
+    background: #f1e4d0;
+    padding: 8px 15px;
+    border-radius: 6px;
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Editores de Código (Simulando VS Code antigo/Tema Escuro) */
+.editor-codigo {
+    background-color: #232529;
+    color: #e3e6ed;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 15px 0;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Syntax Highlighting (Cores do Código) */
+.comentario { color: #7a8291; font-style: italic; }
+.keyword { color: #c678dd; font-weight: bold; }
+.operador { color: #56b6c2; }
+.string { color: #98c379; }
+.numero { color: #d19a66; }
+.console-obj { color: #e5c07b; }
+.metodo { color: #61afef; }
+
+/* Dicas e Links */
+.dica {
+    background-color: #fff;
+    border-left: 4px solid #d19a66;
+    padding: 12px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 20px;
+}
+
+.saiba-mais {
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+.saiba-mais a {
+    color: #3b5998;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Coluna Direita (Menu Tópicos) */
+.card-topicos {
+    background-color: #fbf5eb;
+    border: 1px solid #e6dbcb;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-topicos h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-assuntos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Botões de Assuntos Lateral */
+.btn-assunto {
+    background-color: #fff;
+    border: 1px solid #dcd1be;
+    border-radius: 8px;
+    padding: 12px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-assunto a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+}
+
+.btn-assunto:hover {
+    background-color: #f1e4d0;
+    transform: translateY(-2px);
+}
+
+/* Estado ativo do botão lateral (como na imagem) */
+.btn-assunto.ativo {
+    background-color: #cbd5e1; /* Azul acinzentado do print */
+    border-color: #94a3b8;
+}
+
+/* Botões de Navegação (Anterior e Prática) */
+.btn-navegacao {
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+    max-width: 150px;
+}
+
+.btn-navegacao a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn-navegacao:hover {
+    background-color: #cbd5e1;
+}
+
+.alinhamento-proxima {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Responsividade Básica (Para telas menores) */
+@media (max-width: 900px) {
+    .layout-conteudo {
+        grid-template-columns: 1fr;
+    }
+    .coluna-esquerda {
+        align-items: center;
+    }
+    .alinhamento-proxima {
+        justify-content: center;
+    }
+}
+
+
+
+/* 
 #assunto{
     color: black;
     width: 150px;
@@ -685,9 +932,7 @@ a{
 
 .referencia:hover{
     background-color: #f16305;
-}
-
-
+} */
 
 #mostrar_mensagem{
     width: 300px;

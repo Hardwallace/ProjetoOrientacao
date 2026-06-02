@@ -9,93 +9,95 @@
     <title> Tipos de Dados </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> String </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Em JavaScript, uma string é um tipo de dado usado para representar texto. Strings são sequências de caracteres e podem ser definidas usando <b>aspas simples ( ' )</b>, <b>aspas duplas ( " )</b> ou <b>crases ( ` )</b> para template literals.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> mensagem1 <div id="resultante">=</div> <div id="string">"Olá, mundo!"</div>;
-                            <br>
-                            <div id="comentario">// Aspas duplas</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> mensagem2 <div id="resultante">=</div> <div id="string">'JavaScript é incrível!'</div>;
-                            <br>
-                            <br>
-                            <div id="comentario">// Aspas simples</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"Wallace"</div>;
-                            <br>
-                            <br>
-                            <div id="comentario">// Demonstrar a variavel em uma crase</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> mensagem3 <div id="resultante">=</div> <div id="string">`O nome escolhido é ${nome}`</div>;
-                            <br>
-                            <div id="comentario">// Exemplo completo sobre a crase</div>
-                            <br>
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 630px;">String</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Em JavaScript, uma string é um tipo de dado usado para representar texto. Strings são sequências de caracteres e podem ser definidas usando <strong>aspas simples ( ' )</strong>, <strong>aspas duplas ( " )</strong> ou <strong>crases ( ` )</strong> para template literals.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> mensagem1 <span class="operador">=</span> <span class="string">"Olá, mundo!"</span>;<br>
+                                <span class="comentario">// Aspas duplas</span><br><br>
+                                
+                                <span class="keyword">let</span> mensagem2 <span class="operador">=</span> <span class="string">'JavaScript é incrível!'</span>;<br>
+                                <span class="comentario">// Aspas simples</span><br><br>
+                                
+                                <span class="keyword">let</span> nome <span class="operador">=</span> <span class="string">"Wallace"</span>;<br><br>
+                                <span class="comentario">// Demonstrar a variável em uma crase</span><br>
+                                <span class="keyword">let</span> mensagem3 <span class="operador">=</span> <span class="string">`O nome escolhido é ${nome}`</span>;<br>
+                                <span class="comentario">// Exemplo completo sobre a crase</span>
+                            </code>
+                        </div>
+
+                        <p>As características das strings são as seguintes: as strings não podem ser alteradas diretamente, apenas substituídas por uma nova. Os métodos úteis são:</p>
+                        
+                        <ul class="lista-definicoes">
+                            <li>📏 <strong>.length</strong> = Retorna o tamanho da string;</li>
+                            <li>🔠 <strong>.toUpperCase()</strong> = Converte para letras maiúsculas;</li>
+                            <li>🔡 <strong>.toLowerCase()</strong> = Converte para letras minúsculas;</li>
+                            <li>🔄 <strong>.replace("antigo","novo")</strong> = Substitui parte do texto;</li>
+                        </ul>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> nome <span class="operador">=</span> <span class="string">"maria"</span>;<br>
+                                <span class="comentario">// Declarando variável</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"O nome tem "</span> + nome.length + <span class="string">" letras."</span>);<br>
+                                <span class="comentario">// Exibe: O nome tem 5 letras</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(nome.<span class="metodo">toUpperCase</span>());<br>
+                                <span class="comentario">// Exibe: MARIA</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(nome.<span class="metodo">toLowerCase</span>());<br>
+                                <span class="comentario">// Exibe: maria</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(nome.<span class="metodo">replace</span>(<span class="string">"maria"</span>, <span class="string">"Joao"</span>));<br>
+                                <span class="comentario">// Exibe: Joao</span>
+                            </code>
+                        </div>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_strings.asp" target="_blank" id="link">String</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">As características das strings é o seguinte: as strings não podem ser alteradas diretamente, apenas substituídas por uma nova. os métodos úteis são:
-                    <br>
-                    <br>
-                        <b>.length</b> = Retorna o tamanho da string;
-                    <br>
-                    <br>
-                        <b>.toUpperCase()</b> = Converte para letras maiusculas;
-                    <br>
-                    <br>
-                        <b>.toLowerCase()</b> = Converte para letras minusculas;    
-                    <br>
-                    <br>
-                        <b>.replace("antigo","novo")</b> = Substitui parte do texto;
-                    </p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"maria"</div>;
-                            <br>
-                            <div id="comentario">// Declarando variável</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"O nome tem "</div>+ nome.length +<div id="string">" letras."</div>);
-                            <br>
-                            <div id="comentario">// Exibe: O nome tem 5 letras</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(nome.<div id="valor">toUpperCase</div>());
-                            <br>
-                            <div id="comentario">// Exibe: MARIA</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(nome.<div id="valor">toLowerCase</div>());
-                            <br>
-                            <div id="comentario">// Exibe: maria</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(nome.<div id="valor">replace</div>(<div id="string">"Maria"</div>,<div id="string">Joao</div>));
-                            <br>
-                            <div id="comentario">// Exibe: Joao</div>
-                        </code>
-                    </div>
-                    <br>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_strings.asp" target="_blank" id="link"> String </a> </p>
-                </scroll-container>
-                <br>
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
-                <button id="assunto"><a href="./Tipos_Dados.html"><p>String</p></a></button>
-                <button id="assunto"><a href="./Number.html"><p>Number</p></a></button>
-                <button id="assunto"><a href="./Boolean.html"><p>Boolean</p></a></button>
-                <button id="assunto"><a href="./Array.html"><p>Array</p></a></button>
-                <button id="assunto"><a href="./Object.html"><p>Object</p></a></button>
-            </div>
-            <button id="anterior" style="left: -977px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_String.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto ativo"><a href="./Tipos_Dados.html">String</a></button>
+                        <button class="btn-assunto"><a href="./Number.html">Number</a></button>
+                        <button class="btn-assunto"><a href="./Boolean.html">Boolean</a></button>
+                        <button class="btn-assunto"><a href="./Array.html">Array</a></button>
+                        <button class="btn-assunto"><a href="./Object.html">Object</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

@@ -9,37 +9,67 @@
     <title> Alert() </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Alert() </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Para visualizar a saída do console.log, basta abrir o console do navegador (<b>F12</b> ou <b>Ctrl+Shift+I</b> em muitos navegadores) e acessar a aba Console. Se estiver usando Node.js, a saída aparecerá diretamente no terminal.</p>
-                    <div class="area">
-                        <code>
-                            <div id="valor">alert</div>(<div id="string">"Olá, mundo"</div>)<div id="comentario">//Exibe uma caixa de alerta com a mensagem "Olá, mundo!"</div>
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 600px;">Alert()</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Para visualizar a saída do console.log, basta abrir o console do navegador (<strong>F12</strong> ou <strong>Ctrl+Shift+I</strong> em muitos navegadores) e acessar a aba Console. Se estiver usando Node.js, a saída aparecerá diretamente no terminal.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="metodo">alert</span>(<span class="string">"Olá, mundo"</span>); <span class="comentario">//Exibe uma caixa de alerta com a mensagem "Olá, mundo!"</span>
+                            </code>
+                        </div>
+
+                        <p>Outro exemplo, com uma variável:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> nome <span class="operador">=</span> <span class="string">"Maria"</span>;<br>
+                                <span class="metodo">alert</span>(<span class="string">"Bem-vinda, "</span> + nome + <span class="string">"!"</span>); <span class="comentario">//Exibe "Bem-vinda, Maria!"</span>
+                            </code>
+                        </div>
+
+                        <p>Quando esse código é executado, uma janela pop-up aparece com a mensagem. Se precisar de alternativas menos intrusivas, você pode usar <code>console.log()</code> para depuração ou <code>confirm()</code> e <code>prompt()</code> para interações mais ricas.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/jsref/met_win_alert.asp" target="_blank" id="link">Alert()</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">Outro exemplo, com uma variável:</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"Maria"</div>
-                            <br>
-                            <div id="valor">alert</div>(<div id="string">"Bem-vinda, "</div>+nome+<div id="string">"!"</div>)<div id="comentario">//Exibe "Bem-vinda, Maria!"</div>
-                        </code>
-                    </div>
-                    <p style="margin-right: 50px; display: inline-block;">Quando esse código é executado, uma janela pop-up aparece com a mensagem. Se precisar de alternativas menos intrusivas, você pode usar console.log() para depuração ou confirm() e prompt() para interações mais ricas.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/jsref/met_win_alert.asp" target="_blank" id="link"> Alert()</a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos">
-                <button id="assunto"><a href="Definicoes_Variaveis.html"><p>Variaveis</p></a></button>
-                <button id="assunto"><a href="Console.log.html"><p>Console.log()</p></a></button>
-                <button id="assunto"><a href="Alert.html"><p>Alert()</p></a></button>
-            </div>
-            <button id="anterior" style="left: -598px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_alert.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 140px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="Definicoes_Variaveis.html">Variáveis</a></button>
+                        <button class="btn-assunto"><a href="Console.log.html">Console.log()</a></button>
+                        <button class="btn-assunto ativo"><a href="Alert.html">Alert()</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

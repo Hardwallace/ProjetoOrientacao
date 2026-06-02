@@ -8,38 +8,66 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title> Console.log() </title>
 </head>
+
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Console.log() </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">O console.log no JavaScript é um método usado para exibir mensagens no console do navegador ou do ambiente de desenvolvimento. Ele é muito útil para depuração, pois permite visualizar valores de variáveis, resultados de funções e mensagens durante a execução do código.</p>
-                    <div class="area">
-                        <code>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"Olá, mundo"</div>)<div id="comentario">//Exibe "Olá, mundo!" no console</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"Maria"</div>;<br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"O nome é:"</div>, nome);<br><div id="comentario">//Exibe "O nome é: Maria</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> soma <div id="resultante">=</div> <div id="valor">5</div> + <div id="valor">3</div>;<br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"O resultado da soma é:"</div>, soma);<br><div id="comentario">//Exibe "O resultado da soma é: 8</div>
-                            <br>
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 560px;">Console.log()</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>O console.log no JavaScript é um método usado para exibir mensagens no console do navegador ou do ambiente de desenvolvimento. Ele é muito útil para depuração, pois permite visualizar valores de variáveis, resultados de funções e mensagens durante a execução do código.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"Olá, mundo"</span>); <span class="comentario">//Exibe "Olá, mundo!" no console</span><br><br>
+                                
+                                <span class="keyword">let</span> nome <span class="operador">=</span> <span class="string">"Maria"</span>;<br>
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"O nome é:"</span>, nome);<br>
+                                <span class="comentario">//Exibe "O nome é: Maria"</span><br><br>
+                                
+                                <span class="keyword">let</span> soma <span class="operador">=</span> <span class="numero">5</span> + <span class="numero">3</span>;<br>
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"O resultado da soma é:"</span>, soma);<br>
+                                <span class="comentario">//Exibe "O resultado da soma é: 8"</span>
+                            </code>
+                        </div>
+
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/jsref/met_console_log.asp" target="_blank" id="link">Console.log()</a>
+                        </p>
                     </div>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/jsref/met_console_log.asp" target="_blank" id="link"> Console.log()</a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos">
-                <button id="assunto"><a href="Definicoes_Variaveis.html"><p>Variaveis</p></a></button>
-                <button id="assunto"><a href="Console.log.html"><p>Console.log()</p></a></button>
-                <button id="assunto"><a href="Alert.html"><p>Alert()</p></a></button>
-            </div>
-            <button id="anterior" style="left: -598px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_alert.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 140px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="Definicoes_Variaveis.html">Variáveis</a></button>
+                        <button class="btn-assunto ativo"><a href="Console.log.html">Console.log()</a></button>
+                        <button class="btn-assunto"><a href="Alert.html">Alert()</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

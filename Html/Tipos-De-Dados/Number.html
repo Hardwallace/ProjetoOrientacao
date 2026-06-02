@@ -9,69 +9,86 @@
     <title> Number </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Number </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Em JavaScript, o tipo <b>Number</b> é usado para representar valores numéricos, incluindo números inteiros e de ponto flutuante (decimais). Diferente de algumas linguagens que diferenciam <b>int</b> e <b>float</b>, em JavaScript todos os números são do tipo <b>Number</b>.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Abaixo mostra um exemplo utilizando o tipo <b>Number</b></p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> preco <div id="resultante">=</div> <div id="valor">19.99</div>;
-                            <br>
-                            <div id="comentario">// Preco é considerado como float - Numero quebrado</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> quantidade <div id="resultante">=</div> <div id="valor">3</div>;
-                            <br>
-                            <div id="comentario">// Quantidade é considerado como int - numero inteiro</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(preco, quantidade);
-                            <br>
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 610px;">Number</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Em JavaScript, o tipo <strong>Number</strong> é usado para representar valores numéricos, incluindo números inteiros e de ponto fluante (decimais). Diferente de algumas linguagens que diferenciam <strong>int</strong> e <strong>float</strong>, em JavaScript todos os números são do tipo <strong>Number</strong>.</p>
+                        
+                        <p>Abaixo mostra um exemplo utilizando o tipo <strong>Number</strong>:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> preco <span class="operador">=</span> <span class="numero">19.99</span>;<br>
+                                <span class="comentario">// Preco é considerado como float - Numero quebrado</span><br><br>
+                                
+                                <span class="keyword">let</span> quantidade <span class="operador">=</span> <span class="numero">3</span>;<br>
+                                <span class="comentario">// Quantidade é considerado como int - numero inteiro</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(preco, quantidade);
+                            </code>
+                        </div>
+
+                        <p>Os tipos de number são os seguintes:</p>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> inteiro <span class="operador">=</span> <span class="numero">42</span>;<br>
+                                <span class="comentario">// Numero inteiro</span><br><br>
+                                
+                                <span class="keyword">let</span> decimal <span class="operador">=</span> <span class="numero">3.14</span>;<br>
+                                <span class="comentario">// Numero decimal (ponto flutuante)</span><br><br>
+                                
+                                <span class="keyword">let</span> negativo <span class="operador">=</span> <span class="numero">-10</span>;<br>
+                                <span class="comentario">// Numero negativo</span><br><br>
+                                
+                                <span class="keyword">let</span> exponencial <span class="operador">=</span> <span class="numero">2e3</span>;<br>
+                                <span class="comentario">// 2 * 10³ = 2000</span>
+                            </code>
+                        </div>
+                        
+                        <p>O tipo <strong>Number</strong> é fundamental para cálculos matemáticos e manipulação de valores numéricos em JavaScript.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_numbers.asp" target="_blank" id="link">Number</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">Os tipos de number são os seguintes:</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> inteiro <div id="resultante">=</div> <div id="valor">42</div>;
-                            <br>
-                            <div id="comentario">// Numero inteiro</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> decimal <div id="resultante">=</div> <div id="valor">3.14</div>;
-                            <br>
-                            <div id="comentario">// Numero decimal (ponto flutuante)</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> negativo <div id="resultante">=</div> <div id="valor">-10</div>;
-                            <br>
-                            <div id="comentario">// Numero negativo</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> exponencial <div id="resultante">=</div> <div id="valor">2e3</div>;
-                            <br>
-                            <div id="comentario">// 2 * 10³ = 2000</div>
-                            <br>
-                        </code>
-                    </div>
-                    <br>
-                    <p style="margin-right: 50px; display: inline-block;">O tipo <b>Number</b> é fundamental para cálculos matemáticos e manipulação de valores numéricos em JavaScript</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_numbers.asp" target="_blank" id="link"> Number </a> </p>   
-                </scroll-container> 
-                
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
-                <button id="assunto"><a href="./Tipos_Dados.html"><p>String</p></a></button>
-                <button id="assunto"><a href="./Number.html"><p>Number</p></a></button>
-                <button id="assunto"><a href="./Boolean.html"><p>Boolean</p></a></button>
-                <button id="assunto"><a href="./Array.html"><p>Array</p></a></button>
-                <button id="assunto"><a href="./Object.html"><p>Object</p></a></button>
-            </div>
-            <button id="anterior" style="left: -977px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_number.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Tipos_Dados.html">String</a></button>
+                        <button class="btn-assunto ativo"><a href="./Number.html">Number</a></button>
+                        <button class="btn-assunto"><a href="./Boolean.html">Boolean</a></button>
+                        <button class="btn-assunto"><a href="./Array.html">Array</a></button>
+                        <button class="btn-assunto"><a href="./Object.html">Object</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

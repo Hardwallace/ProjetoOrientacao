@@ -9,76 +9,95 @@
     <title> Array </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Array </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Em JavaScript, um <b>Array</b> é uma estrutura de dados usada para armazenar uma coleção de elementos em uma única variável. Esses elementos podem ser de qualquer tipo, como <b>números</b>, <b>strings</b>, <b>objetos</b> e até mesmo outros arrays.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Os arrays em JavaScript são indexados numericamente, ou seja, cada elemento tem um índice (posição) que começa do 0.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> numeros <div id="resultante">=</div> [<div id="valor">10</div>, <div id="valor">20</div>, <div id="valor">30</div>, <div id="valor">40</div>, <div id="valor">50</div>];
-                            <br>
-                            <div id="comentario">// 10 - posicao 0; 20 - posicao 1; </div>
-                            <br>
-                            <div id="comentario">// 30 - posicao 2; 40 - posicao 3;</div>
-                            <br>
-                            <div id="comentario">// 50 - posicao 4;</div>
-                            <br>
-                            <br>
-                            <div id="let">let</div> frutas <div id="resultante">=</div> [<div id="string">"Maçã"</div>, <div id="string">"Banana"</div>, <div id="string">"Laranja"</div>];
-                            <br>
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 620px;">Array</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Em JavaScript, um <strong>Array</strong> é uma estrutura de dados usada para armazenar uma coleção de elementos em uma única variável. Esses elementos podem ser de qualquer tipo, como <strong>números</strong>, <strong>strings</strong>, <strong>objetos</strong> e até mesmo outros arrays.</p>
+                        
+                        <p>Os arrays em JavaScript são indexados numericamente, ou seja, cada elemento tem um índice (posição) que começa do 0.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> numeros <span class="operador">=</span> [<span class="numero">10</span>, <span class="numero">20</span>, <span class="numero">30</span>, <span class="numero">40</span>, <span class="numero">50</span>];<br>
+                                <span class="comentario">// 10 - posicao 0; 20 - posicao 1;</span><br>
+                                <span class="comentario">// 30 - posicao 2; 40 - posicao 3;</span><br>
+                                <span class="comentario">// 50 - posicao 4;</span><br><br>
+                                
+                                <span class="keyword">let</span> frutas <span class="operador">=</span> [<span class="string">"Maçã"</span>, <span class="string">"Banana"</span>, <span class="string">"Laranja"</span>];
+                            </code>
+                        </div>
+
+                        <p>Cada item do array tem um <strong>índice</strong>, começando do <strong>0</strong>.</p>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> carros <span class="operador">=</span> [<span class="string">"BMW"</span>, <span class="string">"Audi"</span>, <span class="string">"Mercedes"</span>];<br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(carros[<span class="numero">0</span>]); <span class="comentario">// "BMW" (primeiro elemento)</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(carros[<span class="numero">1</span>]); <span class="comentario">// "Audi" (segundo elemento)</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(carros[carros.length - <span class="numero">1</span>]); <span class="comentario">// "Mercedes" (ultimo elemento)</span>
+                            </code>
+                        </div>
+
+                        <p>Os arrays possuem vários métodos úteis para <strong>adicionar</strong> e <strong>remover</strong> elementos.</p>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> lista <span class="operador">=</span> [<span class="numero">1</span>, <span class="numero">2</span>, <span class="numero">3</span>];<br><br>
+                                
+                                lista.<span class="metodo">push</span>(<span class="numero">4</span>); <span class="comentario">// Adiciona final da lista</span><br>
+                                <span class="comentario">// Resultado = [1, 2, 3, 4]</span><br><br>
+                                
+                                lista.<span class="metodo">unshift</span>(<span class="numero">0</span>); <span class="comentario">// Adiciona inicio da lista</span><br>
+                                <span class="comentario">// Resultado = [0, 1, 2, 3, 4]</span>
+                            </code>
+                        </div>
+                        
+                        <p>Os <strong>arrays</strong> são extremamente úteis e amplamente usados em JavaScript para armazenar e manipular dados.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank" id="link">Array</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">Cada item do array tem um <b>índice</b>, começando do <b>0</b>.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> Carros <div id="resultante">=</div> [<div id="string">"BMW"</div>, <div id="string">"Audi"</div> , <div id="string">"Mercedes"</div>];
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(carros[<div id="valor">0</div>]) <div id="comentario">// "BMW" (primeiro elemento)</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(carros[<div id="valor">1</div>]) <div id="comentario">// "Audi" (segundo elemento)</div> 
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(carros[carros.length - <div id="valor">1</div>]); <div id="comentario">// "Mercedes" (ultimo elemento elemento)</div>
-                            <br>
-                        </code>
-                    </div>
-                    <br>
-                    <p style="margin-right: 50px; display: inline-block;">Os arrays possuem vários métodos úteis para <b>adicionar</b> e <b>remover</b> elementos.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> lista <div id="resultante">=</div> [<div id="valor">1</div>, <div id="valor">2</div> , <div id="valor">3</div>];
-                            <br>
-                            <br>
-                            lista.<div id="log">push</div>(<div id="valor">4</div>); <div id="comentario">// Adiciona final da lista</div>
-                            <br>
-                            <div id="comentario">// Resultado = [1, 2, 3, 4]</div>
-                            <br>
-                            <br>
-                            lista.<div id="log">unshift</div>(<div id="valor">0</div>); <div id="comentario">// Adiciona inicio da lista</div>
-                            <br>
-                            <div id="comentario">// Resultado = [0, 1, 2, 3, 4]</div>
-                            <br>
-                        </code>
-                    </div>
-                    <p style="display: inline-block;">Os <b>arrays</b> são extremamente úteis e amplamente usados em JavaScript para armazenar e manipular.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank" id="link"> Array </a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
-                <button id="assunto"><a href="./Tipos_Dados.html"><p>String</p></a></button>
-                <button id="assunto"><a href="./Number.html"><p>Number</p></a></button>
-                <button id="assunto"><a href="./Boolean.html"><p>Boolean</p></a></button>
-                <button id="assunto"><a href="./Array.html"><p>Array</p></a></button>
-                <button id="assunto"><a href="./Object.html"><p>Object</p></a></button>
-            </div>
-            <button id="anterior" style="left: -977px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_Array.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Tipos_Dados.html">String</a></button>
+                        <button class="btn-assunto"><a href="./Number.html">Number</a></button>
+                        <button class="btn-assunto"><a href="./Boolean.html">Boolean</a></button>
+                        <button class="btn-assunto ativo"><a href="./Array.html">Array</a></button>
+                        <button class="btn-assunto"><a href="./Object.html">Object</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

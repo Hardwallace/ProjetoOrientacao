@@ -9,59 +9,82 @@
     <title> Boolean </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Boolean </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Em JavaScript, um Boolean é um tipo de dado que só pode ter dois valores: <b>true</b> (verdadeiro) ou <b>false</b> (falso).</p>
-                    <p style="margin-right: 50px; display: inline-block;">Os valores booleanos são muito utilizados em <b>estruturas condicionais</b>, <b>comparações</b> e <b>lógicas de controle de fluxo.</b></p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> verdadeiro <div id="resultante">=</div> <div id="let">true</div>;
-                            <br>
-                            <br>
-                            <div id="let">let</div> falso <div id="resultante">=</div> <div id="let">false</div>;
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(preco, quantidade); <div id="comentario">// true</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(preco, quantidade); <div id="comentario">// true</div>
-                            <br>
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 610px;">Boolean</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Em JavaScript, um <strong>Boolean</strong> é um tipo de dado que só pode ter dois valores: <strong>true</strong> (verdadeiro) ou <strong>false</strong> (falso).</p>
+                        
+                        <p>Os valores booleanos são muito utilizados em <strong>estruturas condicionais</strong>, <strong>comparações</strong> e <strong>lógicas de controle de fluxo.</strong></p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> verdadeiro <span class="operador">=</span> <span class="keyword">true</span>;<br><br>
+                                
+                                <span class="keyword">let</span> falso <span class="operador">=</span> <span class="keyword">false</span>;<br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(preco, quantidade); <span class="comentario">// true</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(preco, quantidade); <span class="comentario">// true</span>
+                            </code>
+                        </div>
+
+                        <p>Os operadores de comparação retornam valores booleanos (<strong>true</strong> ou <strong>false</strong>):</p>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="numero">10</span> &gt; <span class="numero">5</span>); <span class="comentario">// true</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="numero">3</span> === <span class="numero">3</span>); <span class="comentario">// true</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="numero">7</span> &lt; <span class="numero">2</span>); <span class="comentario">// false</span><br><br>
+                                
+                                <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"a"</span> !== <span class="string">"b"</span>); <span class="comentario">// true</span>
+                            </code>
+                        </div>
+                        
+                        <p>Os booleanos são essenciais para controle de fluxo e lógica em JavaScript.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_booleans.asp" target="_blank" id="link">Boolean</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">Os operadores de comparação retornam valores booleanos (<b>true</b> ou <b>false</b>):</p>
-                    <div class="area">
-                        <code>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="valor">10</div> > <div id="valor">5</div>); <div id="comentario">// true</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="valor">3</div> === <div id="valor">3</div>); <div id="comentario">// true</div>
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="valor">7</div> < <div id="valor">2</div>); <div id="comentario">// false</div> 
-                            <br>
-                            <br>
-                            <div id="console">Console</div>.<div id="log">log</div>(<div id="string">"a"</div> !== <div id="string">"b"</div>); <div id="comentario">// true</div>
-                            <br>
-                        </code>
-                    </div>
-                    <br>
-                    <p style="margin-right: 50px; display: inline-block;">Os booleanos são essenciais para controle de fluxo e lógica em JavaScript.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_booleans.asp" target="_blank" id="link"> Boolean </a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
-                <button id="assunto"><a href="./Tipos_Dados.html"><p>String</p></a></button>
-                <button id="assunto"><a href="./Number.html"><p>Number</p></a></button>
-                <button id="assunto"><a href="./Boolean.html"><p>Boolean</p></a></button>
-                <button id="assunto"><a href="./Array.html"><p>Array</p></a></button>
-                <button id="assunto"><a href="./Object.html"><p>Object</p></a></button>
-            </div>
-            <button id="anterior" style="left: -977px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_boolean.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Tipos_Dados.html">String</a></button>
+                        <button class="btn-assunto"><a href="./Number.html">Number</a></button>
+                        <button class="btn-assunto ativo"><a href="./Boolean.html">Boolean</a></button>
+                        <button class="btn-assunto"><a href="./Array.html">Array</a></button>
+                        <button class="btn-assunto"><a href="./Object.html">Object</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

@@ -9,53 +9,86 @@
     <title> Estrutura de repetição </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> For </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Executa um bloco de código um número específico de vezes.</p>
-                    <p style="margin-right: 50px; display: inline-block;">O <b>"For"</b> é uma estrutura de controle de fluxo que permite executar um bloco de código repetidamente por um número específico de vezes. Ele consiste em três partes principais: inicialização, condição e expressão de incremento. O loop <b>"For"</b> é especialmente útil quando você sabe exatamente quantas vezes deseja executar o código.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">for</div> (inicializacao; condição; expressão de incremento) {
-                            <br>
-                            <div id="comentario" style="margin-left: 30px;">// Bloco de código a ser repetido</div>    
-                            <br>
-                            }    
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 640px;">For</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Executa um bloco de código um número específico de vezes.</p>
+                        
+                        <p>O <strong>"For"</strong> é uma estrutura de controle de fluxo que permite executar um bloco de código repetidamente por um número específico de vezes. Ele consiste em três partes principais: inicialização, condição e expressão de incremento. O loop <strong>"For"</strong> é especialmente útil quando você sabe exatamente quantas vezes deseja executar o código.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">for</span> (inicializacao; condição; expressão de incremento) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de código a ser repetido</span><br>
+                                }
+                            </code>
+                        </div>
+
+                        <p>A <strong>"inicialização"</strong> é executada uma vez antes do início do loop e geralmente é usada para inicializar uma variable de controle.</p>
+                        
+                        <p>A <strong>"condição"</strong> é avaliada antes de cada iteração do loop. Se for verdadeira, o bloco de código é executado; caso contrário, o loop é encerrado.</p>
+                        
+                        <p>A <strong>“expressão de incremento”</strong> é executada após cada iteração do loop e geralmente é usada para incrementar ou atualizar a variável de controle.</p>
+                        
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">for</span> (<span class="keyword">let</span> i <span class="operador">=</span> <span class="numero">1</span>; i <span class="operador">&lt;=</span> <span class="numero">5</span>; i++) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(i);<br>
+                                }
+                            </code>
+                        </div>
+                        
+                        <p>A <strong>"inicialização"</strong> define a variável <strong>"i"</strong> como <strong>1</strong>.</p>
+                        
+                        <p>A <strong>"condição"</strong> verifica se <strong>"i"</strong> é menor ou igual a <strong>5</strong>.</p>
+                        
+                        <p>A <strong>"expressão de incremento"</strong> incrementa <strong>"i"</strong> em 1 após cada iteração do loop.</p>
+                        
+                        <p>O bloco de código dentro do loop imprime o valor de "i" no console. O loop será executado enquanto "i" for menor ou igual a 5, portanto, os números de 1 a 5 serão impressos no console.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank" id="link">Estrutura For</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">A <b>"inicialização"</b> é executada uma vez antes do início do loop e geralmente é usada para inicializar uma variável de controle</p>
-                    <p style="margin-right: 50px; display: inline-block;">A <b>"condição"</b> é avaliada antes de cada iteração do loop. Se for verdadeira, o bloco de código é executado; caso contrário, o loop é encerrado.</p>
-                    <p style="margin-right: 50px; display: inline-block;">A <b>“expressão de incremento”</b> é executada após cada iteração do loop e geralmente é usada para incrementar ou atualizar a variável de controle.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">for</div> (<div id="let">let</div> i <div id="resultante">=</div> <div id="valor">1</div>; i <<div id="resultante">=</div> <div id="valor">5</div>; i++) {
-                            <br>
-                            <div id="console" style="margin-left: 50px;">console</div>.<div id="log">log</div>(i);
-                            <br>
-                            }    
-                        </code>
-                    </div>
-                    <p style="display: inline-block;">A <b>"inicialização"</b> define a variável <b>"i"</b> como <b>1</b>.</p>
-                    <br>
-                    <p style="display: inline-block;">A <b>"condição"</b> verifica se <b>"i"</b> é menor ou igual a <b>5</b>.</p>
-                    <p style="display: inline-block;">A <b>"expressão de incremento"</b> incrementa <b>"i"</b> em 1 após cada iteração do loop.</p>
-                    <p style="display: inline-block; margin-right: 50px;">O bloco de código dentro do loop imprime o valor de "i" no console. O loop será executado enquanto "i" for menor ou igual a 5, portanto, os números de 1 a 5 serão impressos no console.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank" id="link"> Estrutura For </a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
-                <button id="assunto"><a href="./Repeticao.html"><p>For</p></a></button>
-                <button id="assunto"><a href="./While.html"><p>While</p></a></button>
-                <button id="assunto"><a href="./Do-While.html"><p>Do-While</p></a></button>
-                <button id="assunto"><a href="./For-In.html"><p>For-In</p></a></button>
-                <button id="assunto"><a href="./For-Of.html"><p>For-Of</p></a></button>
-            </div>
-            <button id="anterior" style="left: -977px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto ativo"><a href="./Repeticao.html">For</a></button>
+                        <button class="btn-assunto"><a href="./While.html">While</a></button>
+                        <button class="btn-assunto"><a href="./Do-While.html">Do-While</a></button>
+                        <button class="btn-assunto"><a href="./For-In.html">For-In</a></button>
+                        <button class="btn-assunto"><a href="./For-Of.html">For-Of</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

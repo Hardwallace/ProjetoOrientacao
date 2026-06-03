@@ -9,58 +9,86 @@
     <title> Estrutura de repetição </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Do-While </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Executa um bloco de código uma vez e, em seguida, repete a execução enquanto uma condição especificada for verdadeira. A condição é verificada após a execução do bloco, garantindo que o bloco seja executado pelo menos uma vez.</p>
-                    <p style="margin-right: 50px; display: inline-block;">O <b>"Do-While"</b> é uma estrutura de controle de fluxo semelhante ao loop while, mas com uma diferença fundamental: no do-while, o bloco de código é executado pelo menos uma vez, mesmo se a condição fornecida for falsa.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Após a primeira execução, a condição é verificada, e se for verdadeira, o bloco de código é executado novamente. Este tipo de loop é útil quando você precisa garantir que um bloco de código seja executado pelo menos uma vez, independentemente da condição.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">do</div> {
-                            <br>
-                            <br>
-                            <div id="comentario" style="margin-left: 30px;">// Bloco de código a ser repetido</div>    
-                            <br>
-                            <br>
-                            } <div id="let">while </div> (condição);   
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 610px;">Do-While</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Executa um bloco de código uma vez e, em seguida, repete a execução enquanto uma condição especificada for verdadeira. A condição é verificada após a execução do bloco, garantindo que o bloco seja executado pelo menos uma vez.</p>
+                        
+                        <p>O <strong>"Do-While"</strong> é uma estrutura de controle de fluxo semelhante ao loop while, mas com uma diferença fundamental: no do-while, o bloco de código é executado pelo menos uma vez, mesmo se a condição fornecida for falsa.</p>
+                        
+                        <p>Após a primeira execução, a condição é verificada, e se for verdadeira, o bloco de código é executado novamente. Este tipo de loop é útil quando você precisa garantir que um bloco de código seja executado pelo menos uma vez, independentemente da condição.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">do</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de código a ser repetido</span><br>
+                                } <span class="keyword">while</span> (condição);
+                            </code>
+                        </div>
+
+                        <p>O bloco de código dentro do loop é executado uma vez, independentemente da condição.</p>
+                        
+                        <p>Após a primeira execução, a condição é avaliada. Se for verdadeira, o bloco de código é executado novamente; caso contrário, o loop é encerrado.</p>
+                        
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> numero;<br>
+                                <span class="keyword">do</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;numero <span class="operador">=</span> parseFloat(<span class="metodo">prompt</span>(<span class="string">"Digite um número positivo:"</span>));<br>
+                                } <span class="keyword">while</span> (numero <span class="operador">&lt;=</span> <span class="numero">0</span>);<br><br>
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Você digitou número positivo: "</span> <span class="operador">+</span> numero);
+                            </code>
+                        </div>
+                        
+                        <p>O bloco de código dentro do loop solicita ao usuário um número positivo.</p>
+                        
+                        <p>Mesmo que o usuário insira um número negativo ou zero na primeira vez, o bloco de código será executado pelo menos uma vez.</p>
+                        
+                        <p>Após a entrada do usuário, a condição é verificada. Se o número for menor ou igual a zero, o loop continuará a ser executado até que o usuário insira um número positivo.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/Jsref/jsref_dowhile.asp" target="_blank" id="link">Estrutura Do-while</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">O bloco de código dentro do loop é executado uma vez, independentemente da condição.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Após a primeira execução, a condição é avaliada. Se for verdadeira, o bloco de código é executado novamente; caso contrário, o loop é encerrado.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> numero; 
-                            <br>
-                            <div id="let">do</div> {
-                            <br>
-                            <div style="margin-left: 15px;">numero=parseFloat(<div id="valor">prompt</div>(<div id="string">"Digite um nunweo positivo:"</div>));</div>  
-                            } <div id="let">while</div> (numero <<div id="resultante">=</div> <div id="valor">0</div>);
-                            <br>
-                            <br>
-                            <div id="console">console</div>.<div id="log">log</div>(<div id="string">"Você digitou numero positivo: "</div> + numero);
-                        </code>
-                    </div>
-                    <p style="display: inline-block;">O bloco de código dentro do loop solicita ao usuário um número positivo.</p>
-                    <br>
-                    <p style="display: inline-block;">Mesmo que o usuário insira um número negativo ou zero na primeira vez, o bloco de código será executado pelo menos uma vez.</p>
-                    <p style="display: inline-block;">Após a entrada do usuário, a condição é verificada. Se o número for menor ou igual a zero, o loop continuará a ser executado até que o usuário insira um número positivo.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/Jsref/jsref_dowhile.asp" target="_blank" id="link"> Estrutura Do-while </a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
-                <button id="assunto"><a href="./Repeticao.html"><p>For</p></a></button>
-                <button id="assunto"><a href="./While.html"><p>While</p></a></button>
-                <button id="assunto"><a href="./Do-While.html"><p>Do-While</p></a></button>
-                <button id="assunto"><a href="./For-In.html"><p>For-In</p></a></button>
-                <button id="assunto"><a href="./For-Of.html"><p>For-Of</p></a></button>
-            </div>
-            <button id="anterior" style="left: -977px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="/Html/Blocos/Pratica_while.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Repeticao.html">For</a></button>
+                        <button class="btn-assunto"><a href="./While.html">While</a></button>
+                        <button class="btn-assunto ativo"><a href="./Do-While.html">Do-While</a></button>
+                        <button class="btn-assunto"><a href="./For-In.html">For-In</a></button>
+                        <button class="btn-assunto"><a href="./For-Of.html">For-Of</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

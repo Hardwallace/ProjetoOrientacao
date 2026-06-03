@@ -9,64 +9,85 @@
     <title> Condicionais </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> If-Else </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Executa um bloco de código se uma condição for <b>verdadeira</b> e outro bloco de código se a condição for <b>falsa</b>.</p>
-                    <p style="margin-right: 50px; display: inline-block;">É uma instrução que permite ao programa tomar uma <b>decisão binária</b> com base em uma condição: se a condição especificada for avaliada como verdadeira (true), um bloco de código é executado; caso contrário, outro bloco de código é executado. Essa estrutura permite ao programa lidar com diferentes cenários de forma alternativa.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> (condicao) {
-                            <br>
-                            <br>
-                            <div id="comentario">// Bloco de codigo a ser executado se a condição for verdadeira </div>
-                            <br>
-                            <br>
-                            } <div id="let">else</div> {
-                            <br>
-                            <br>
-                            <div id="comentario">// Bloco de codigo a ser executado se a condição for falsa </div>
-                            <br>
-                            <br>
-                            }
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 620px;">If-Else</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Executa um bloco de código se uma condição for <strong>verdadeira</strong> e outro bloco de código se a condição for <strong>falsa</strong>.</p>
+                        
+                        <p>É uma instrução que permite ao programa tomar uma <strong>decisão binária</strong> com base em uma condição: se a condição especificada for avaliada como verdadeira (true), um bloco de código é executado; caso contrário, outro bloco de código é executado. Essa estrutura permite ao programa lidar com diferentes cenários de forma alternativa.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">if</span> (condicao) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de codigo a ser executado se a condição for verdadeira</span><br>
+                                } <span class="keyword">else</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de codigo a ser executado se a condição for falsa</span><br>
+                                }
+                            </code>
+                        </div>
+
+                        <p><strong>'condicao'</strong> é a expressão que será avaliada. Se a condição for verdadeira, o bloco de código dentro do <strong>'if'</strong> será executado. Caso contrário, o bloco de código dentro do <strong>'else'</strong> será executado.</p>
+                        
+                        <p>O bloco de código dentro do <strong>‘if’</strong> ou <strong>‘else’</strong> pode conter uma ou mais instruções JavaScript.</p>
+                        
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> idade <span class="operador">=</span> <span class="numero">15</span>;<br><br>
+                                
+                                <span class="keyword">if</span> (idade <span class="operador">&gt;=</span> <span class="numero">18</span>) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Você é maior de idade"</span>);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Esta mensagem será exibida se a idade for maior ou igual a 18</span><br>
+                                } <span class="keyword">else</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Você é menor de idade"</span>);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Esta mensagem será exibida se a idade for menor que 18</span><br>
+                                }
+                            </code>
+                        </div>
+                        
+                        <p>Se a variável <strong>‘idade’</strong> for <strong>maior ou igual a 18</strong>, a mensagem <strong>"Você é maior de idade."</strong> será exibida no console. Caso contrário, se a condição não for atendida (<strong>ou seja, se a idade for menor que 18</strong>), o bloco de código dentro do <strong>‘else’</strong> será executado e a mensagem <strong>"Você é menor de idade."</strong> será exibida.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank" id="link">Estrutura If - Else</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;"><b>'condicao'</b> é a expressão que será avaliada. Se a condição for verdadeira, o bloco de código dentro do <b>'if'</b> será executado. Caso contrário, o bloco de código dentro do <b>'else'</b> será executado.</p>
-                    <p style="margin-right: 50px; display: inline-block;">O bloco de código dentro do <b>‘if’</b> ou <b>‘else’</b> pode conter uma ou mais instruções JavaScript.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> idade <div id="resultante">=</div> <div id="valor"> 15</div>
-                            <br>
-                            <br>
-                            <div id="let">if</div> (idade >= <div id="valor"> 18</div>) {
-                            <br>
-                            <div id="console" style="margin-left: 40px;">console</div>.<div id="log">log</div>(<div id="string">"Você é maior de idade"</div>);
-                            <div id="comentario">// Esta mensagem será exibida se a idade for maior ou igual a 18</div>
-                            <br>
-                            } <div id="let"> else</div> {
-                            <br>
-                            <div id="console" style="margin-left: 40px;">console</div>.<div id="log">log</div>(<div id="string">"Você é menor de idade"</div>);
-                            <div id="comentario">// Esta mensagem será exibida se a idade for menor que 18</div>
-                            }
-                        </code>
-                    </div>
-                    <br>
-                    <p style="margin-right: 50px; display: inline-block;">Se a variável <b>‘idade’</b> for <b>maior ou igual a 18</b>, a mensagem <b>"Você é maior de idade."</b> será exibida no console. Caso contrário, se a condição não for atendida (<b>ou seja, se a idade for menor que 18</b>), o bloco de código dentro do <b>‘else’</b> será executado e a mensagem <b>"Você é menor de idade."</b> será exibida.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank" id="link"> Estrutura If - Else </a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 80px;">
-                <button id="assunto"><a href="./Condicionais.html"><p>If</p></a></button>
-                <button id="assunto"><a href="./If-Else.html"><p>If-Else</p></a></button>
-                <button id="assunto"><a href="./Else-If.html"><p>Else-If</p></a></button>
-                <button id="assunto"><a href="./Switch-Case.html"><p>Switch-Case</p></a></button>
-            </div>
-            <button id="anterior" style="left: -861px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_Else-if.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Condicionais.html">If</a></button>
+                        <button class="btn-assunto ativo"><a href="./If-Else.html">If-Else</a></button>
+                        <button class="btn-assunto"><a href="./Else-If.html">Else-If</a></button>
+                        <button class="btn-assunto"><a href="./Switch-Case.html">Switch-Case</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

@@ -9,57 +9,83 @@
     <title> Estrutura de repetição </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> For-Of </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Itera sobre os valores de um objeto iterável (como arrays e strings).</p>
-                    <p style="margin-right: 50px; display: inline-block;">O <b>"For-Of"</b> é uma estrutura de controle de fluxo introduzida no ECMAScript 6 (também conhecido como ES6) que é usada para iterar sobre elementos iteráveis, como <b>arrays</b>, <b>strings</b>, <b>mapas</b>, <b>conjuntos</b>, entre outros. Ele simplifica a iteração sobre esses tipos de dados, permitindo acessar diretamente os valores dos elementos, em vez de seus índices ou chaves.
-                    </p>
-                    <div class="area">
-                        <code>
-                            <div id="let">for</div> (variavel <div id="let">of</div> iteravel) {
-                            <br>
-                            <br>
-                            <div id="comentario" style="margin-left: 30px;">// Bloco de código a ser repetido</div>    
-                            <br>
-                            <br>
-                            }
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 630px;">For-Of</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Itera sobre os valores de um objeto iterável (como arrays e strings).</p>
+                        
+                        <p>O <strong>"For-Of"</strong> é uma estrutura de controle de fluxo introduzida no ECMAScript 6 (também conhecido como ES6) que é usada para iterar sobre elementos iteráveis, como <strong>arrays</strong>, <strong>strings</strong>, <strong>mapas</strong>, <strong>conjuntos</strong>, entre outros. Ele simplifica a iteração sobre esses tipos de dados, permitindo acessar diretamente os valores dos elementos, em vez de seus índices ou chaves.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">for</span> (variavel <span class="keyword">of</span> iteravel) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de código a ser repetido</span><br>
+                                }
+                            </code>
+                        </div>
+
+                        <p>A <strong>‘variável’</strong> é uma variável local que recebe o valor de cada elemento do iterável em cada iteração.</p>
+                        
+                        <p>O <strong>‘iterável’</strong> é o objeto iterável sobre o qual você deseja iterar.</p>
+                        
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> numeros <span class="operador">=</span> [<span class="numero">1</span>, <span class="numero">2</span>, <span class="numero">3</span>, <span class="numero">4</span>, <span class="numero">5</span>];<br><br>
+                                <span class="keyword">for</span> (<span class="keyword">let</span> numero <span class="keyword">of</span> numeros) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(numero);<br>
+                                }
+                            </code>
+                        </div>
+                        
+                        <p>O loop <strong>‘For-Of’</strong> itera sobre o array numeros.</p>
+                        
+                        <p>Em cada iteração, a variável número recebe o valor de cada elemento do array.</p>
+                        
+                        <p>O valor de cada elemento é exibido no console. O loop <strong>for-of</strong> simplifica a iteração sobre os elementos do array, eliminando a necessidade de acessar os elementos por meio de índices.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_loop_forof.asp" target="_blank" id="link">Estrutura For-Of</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">A <b>'variável'</b> é uma variável local que recebe o valor de cada elemento do iterável em cada iteração.</p>
-                    <p style="margin-right: 50px; display: inline-block;">O <b>'iterável'</b> é o objeto iterável sobre o qual você deseja iterar.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> numeros <div id="resultante">=</div> [<div id="valor">1</div>, <div id="valor">2</div>, <div id="valor">3</div>, <div id="valor">4</div>, <div id="valor">5</div>]; 
-                            <br>
-                            <br>
-                            <div id="let">for</div> (<div id="let">let</div> numero <div id="let">of</div> numeros) {
-                            <br>
-                            <div id="console" style="margin-left: 45px;">console</div>.<div id="log">log</div>(numero);
-                            <br>
-                            }     
-                        </code>
-                    </div>
-                    <p style="display: inline-block;">O loop <b>‘For-Of’</b> itera sobre o array numeros.</p>
-                    <br>
-                    <p style="display: inline-block;">Em cada iteração, a variável número recebe o valor de cada elemento do array.</p>
-                    <p style="display: inline-block;">O valor de cada elemento é exibido no console. O loop <b>for-of</b> simplifica a iteração sobre os elementos do array, eliminando a necessidade de acessar os elementos por meio de índices.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_loop_forof.asp" target="_blank" id="link"> Estrutura For-Of </a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
-                <button id="assunto"><a href="./Repeticao.html"><p>For</p></a></button>
-                <button id="assunto"><a href="./While.html"><p>While</p></a></button>
-                <button id="assunto"><a href="./Do-While.html"><p>Do-While</p></a></button>
-                <button id="assunto"><a href="./For-In.html"><p>For-In</p></a></button>
-                <button id="assunto"><a href="./For-Of.html"><p>For-Of</p></a></button>
-            </div>
-            <button id="anterior" style="left: -977px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_For_of.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Repeticao.html">For</a></button>
+                        <button class="btn-assunto"><a href="./While.html">While</a></button>
+                        <button class="btn-assunto"><a href="./Do-While.html">Do-While</a></button>
+                        <button class="btn-assunto"><a href="./For-In.html">For-In</a></button>
+                        <button class="btn-assunto ativo"><a href="./For-Of.html">For-Of</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

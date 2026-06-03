@@ -9,64 +9,87 @@
     <title> Estrutura de repetição </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> For-In </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="/Img/Bem vindo.png">
-                <scroll-container>
-                    <p style="margin-right: 50px; display: inline-block;">Itera sobre as propriedades de um objeto.</p>
-                    <p style="margin-right: 50px; display: inline-block;">O <b>"For-In"</b> é uma estrutura de controle de fluxo usada para iterar sobre as propriedades de um objeto. Ele percorre todas as propriedades numeradas de um objeto, incluindo propriedades herdadas da cadeia de protótipos. O loop for-in é comumente utilizado para acessar e manipular as propriedades de um objeto dinamicamente.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">for</div> (variavel <div id="let">in</div> objeto) {
-                            <br>
-                            <br>
-                            <div id="comentario" style="margin-left: 30px;">// Bloco de código a ser repetido</div>    
-                            <br>
-                            <br>
-                            }
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 630px;">For-In</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Itera sobre as propriedades de um objeto.</p>
+                        
+                        <p>O <strong>"For-In"</strong> é uma estrutura de controle de fluxo usada para iterar sobre as propriedades de um objeto. Ele percorre todas as propriedades numeradas de um objeto, incluindo propriedades herdadas da cadeia de protótipos. O loop for-in é comumente utilizado para acessar e manipular as propriedades de um objeto dinamicamente.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">for</span> (variavel <span class="keyword">in</span> objeto) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de código a ser repetido</span><br>
+                                }
+                            </code>
+                        </div>
+
+                        <p>A <strong>‘variável’</strong> é uma variável local que receberá o nome de cada propriedade do objeto em cada iteração.</p>
+                        
+                        <p>O <strong>‘Objeto’</strong> é o objeto sobre o qual você deseja iterar.</p>
+                        
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> carro <span class="operador">=</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade-chave">marca</span>: <span class="string">"Toyota"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade-chave">modelo</span>: <span class="string">"Corolla"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade-chave">ano</span>: <span class="numero">2020</span><br>
+                                };<br><br>
+                                <span class="keyword">for</span> (<span class="keyword">let</span> propriedade <span class="keyword">in</span> carro) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(propriedade <span class="operador">+</span> <span class="string">": "</span> <span class="operador">+</span> carro[propriedade]);<br>
+                                }
+                            </code>
+                        </div>
+                        
+                        <p>O loop <strong>for-in</strong> percorre todas as propriedades enumeráveis do objeto carro.</p>
+                        
+                        <p>Em cada iteração, a variável propriedade recebe o nome de uma propriedade do objeto carro.</p>
+                        
+                        <p>A expressão <strong>carro[propriedade]</strong> é usada para acessar o valor associado a cada propriedade e exibi-lo no console, junto com o nome da propriedade.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_loop_forin.asp" target="_blank" id="link">Estrutura For-In</a>
+                        </p>
                     </div>
-                    <p style="margin-right: 50px; display: inline-block;">A <b>‘variável’</b> é uma variável local que receberá o nome de cada propriedade do objeto em cada iteração.</p>
-                    <p style="margin-right: 50px; display: inline-block;">O <b>‘Objeto’</b> é o objeto sobre o qual você deseja iterar.</p>
-                    <p style="margin-right: 50px; display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">carro</div> carro <div id="resultante">=</div> { 
-                            <br>
-                            <div id="valor" style="margin-left: 65px;">marca</div>: <div id="string">"Toyota"</div>, 
-                            <br>
-                            <div id="valor" style="margin-left: 65px;">modelo</div>: <div id="string">"Corolla"</div>, 
-                            <br>
-                            <div id="valor" style="margin-left: 65px;">ano</div>: <div id="log">2020</div> 
-                            <br>
-                            };
-                            <br>
-                            <br>
-                            <div id="let">for</div> (<div id="let">let</div> propriedade <div id="let">in</div> carro) {
-                            <br>
-                            <div id="console" style="margin-left: 45px;">console</div>.<div id="log">log</div>(propriedade + <div id="string">": "</div> + carro[propriedade]);    
-                            <br>
-                            }    
-                        </code>
-                    </div>
-                    <p style="display: inline-block;">O loop <b>for-in</b> percorre todas as propriedades enumeráveis do objeto carro.</p>
-                    <br>
-                    <p style="display: inline-block;">Em cada iteração, a variável propriedade recebe o nome de uma propriedade do objeto carro.</p>
-                    <p style="display: inline-block;">A expressão <b>carro[propriedade]</b> é usada para acessar o valor associado a cada propriedade e exibi-lo no console, junto com o nome da propriedade.</p>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_loop_forin.asp" target="_blank" id="link"> Estrutura For-In </a> </p>
-                </scroll-container>    
-            </div>
-            <div class="assuntos" style="left: 640px; padding-left: 19px; margin-left: 2px;">
-                <button id="assunto"><a href="./Repeticao.html"><p>For</p></a></button>
-                <button id="assunto"><a href="./While.html"><p>While</p></a></button>
-                <button id="assunto"><a href="./Do-While.html"><p>Do-While</p></a></button>
-                <button id="assunto"><a href="./For-In.html"><p>For-In</p></a></button>
-                <button id="assunto"><a href="./For-Of.html"><p>For-Of</p></a></button>
-            </div>
-            <button id="anterior" style="left: -977px; top: 95px;"><a href="../Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="../Blocos/Pratica_For_In.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Repeticao.html">For</a></button>
+                        <button class="btn-assunto"><a href="./While.html">While</a></button>
+                        <button class="btn-assunto"><a href="./Do-While.html">Do-While</a></button>
+                        <button class="btn-assunto ativo"><a href="./For-In.html">For-In</a></button>
+                        <button class="btn-assunto"><a href="./For-Of.html">For-Of</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

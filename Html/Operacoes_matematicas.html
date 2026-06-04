@@ -9,47 +9,87 @@
     <title> Operações Matemáticas </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Operações Matemáticas </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="../Img/Bem vindo.png">
-                <scroll-container>
-                    <p>É a execução de cálculos ou manipulações numéricas em uma sequência ordenada de instruções. Essas operações são fundamentais para realizar diferentes tipos  de cálculos e processamentos numéricos em um programa.</p>
-                    <p>Ocorre de forma direta, uma após a outra, sem nenhuma condição ou iteração envolvida. Cada operação matemática é uma instrução independente que é executada em ordem sequencial.</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> resultado <div id="resultante">=</div> expressao;
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 450px;">Operações Matemáticas</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="../Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>É a execução de cálculos ou manipulações numéricas em uma sequência ordenada de instruções. Essas operações são fundamentais para realizar diferentes tipos de cálculos e processamentos numéricos em um programa.</p>
+                        
+                        <p>Ocorre de forma direta, uma após a outra, sem nenhuma condição ou iteração envolvida. Cada operação matemática é uma instrução independente que é executada em ordem sequencial.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> resultado <span class="operador">=</span> expressao;
+                            </code>
+                        </div>
+
+                        <p><strong>'resultado'</strong> é a variável onde o resultado da expressão será armazenado.</p>
+                        <p><strong>'expressao'</strong> é a expressão matemática que você deseja calcular.</p>
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> x <span class="operador">=</span> <span class="numero">10</span>;<br>
+                                <span class="keyword">let</span> y <span class="operador">=</span> <span class="numero">5</span>;<br>
+                                <span class="keyword">let</span> soma <span class="operador">=</span> x <span class="operador">+</span> y;<br>
+                                <span class="keyword">let</span> multiplicar <span class="operador">=</span> x <span class="operador">*</span> y;<br>
+                                <span class="keyword">let</span> divisao <span class="operador">=</span> x <span class="operador">/</span> y;<br>
+                                <span class="keyword">let</span> subtracao <span class="operador">=</span> x <span class="operador">-</span> y;
+                            </code>
+                        </div>
+                        
+                        <p>Várias operações matemáticas são realizadas em uma sequência ordenada de instruções. Cada operação é executada de forma sequencial, uma após a outra, conforme definido na estrutura sequencial do código JavaScript. Os resultados das operações são armazenados em variáveis correspondentes (<strong>Soma, Multiplicação, Divisão e Subtração</strong>). O resultado impresso será:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                Soma <span class="operador">=</span> <span class="numero">15</span>;<br>
+                                Multiplicação <span class="operador">=</span> <span class="numero">50</span>;<br>
+                                Divisão <span class="operador">=</span> <span class="numero">2</span>;<br>
+                                Subtração <span class="operador">=</span> <span class="numero">5</span>;
+                            </code>
+                        </div>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_arithmetic.asp" target="_blank" id="link">Operações matemáticas</a>
+                        </p>
                     </div>
-                    <p style="display: inline-block;"><b>'resultado'</b> é a variável onde o resultado da expressão será armazenado.</p>
-                    <p style="display: inline-block;"><strong>'expressao'</strong> é a expressão matemática que você deseja calcular.</p>
-                    <p style="display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da <br> seguinte maneira:</p>
-                    <div class="area">
-                        <code>
-                            <div id="let">let</div> x <div id="resultante">=</div> <div id="valor">10</div>; <br>
-                            <div id="let">let</div> y <div id="resultante">=</div> <div id="valor">5</div>; <br>
-                            <div id="let">let</div> soma <div id="resultante">=</div> x <div id="simbolo">+</div> y; <br>
-                            <div id="let">let</div> multiplicar <div id="resultante">=</div> x <div id="simbolo">*</div> y; <br>
-                            <div id="let">let</div> divisao <div id="resultante">=</div> x <div id="simbolo">/</div> y; <br>
-                            <div id="let">let</div> subtracao <div id="resultante">=</div> x <div id="simbolo">-</div> y;
-                        </code>
-                    </div>
-                    <p style="display: inline-block;">Várias operações matemáticas são realizadas em uma sequência ordenada de instruções. Cada operação é executada de forma sequencial, uma após a outra, conforme definido na estrutura sequencial do código JavaScript. Os resultados das operações são armazenados em variáveis correspondentes (<b>Soma, Multiplicação, Divisao e Subtração</b>). O resultado imprimindo será:</p>
-                    <div class="area">
-                        <code>
-                            Soma <div id="resultante">=</div> <div id="valor">15</div>; <br>
-                            Multiplicação <div id="resultante">=</div> <div id="valor">50</div>; <br>
-                            Divisão <div id="resultante">=</div> <div id="valor">2</div>; <br>
-                            Subtração <div id="resultante">=</div> <div id="valor">5</div>; <br>
-                        </code>
-                    </div>
-                    <br>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_arithmetic.asp" target="_blank" id="link"> Operações matemáticas </a> </p>
-                </scroll-container>    
-            </div>
-            <button id="anterior"><a href="Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="/Html/Blocos/Pratica_matematica.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 100px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Atribuicao_Variaveis.html">Atribuição</a></button>
+                        <button class="btn-assunto ativo"><a href="./Operacoes_matematicas.html">Operações</a></button>
+                        <button class="btn-assunto"><a href="./Interatividade_Usuário.html">Interatividade</a></button>
+                        <button class="btn-assunto"><a href="./Contatenacao_Strings.html">Concatenação</a></button>
+                        <button class="btn-assunto"><a href="./Estruturas_Sequenciais.html">Sequenciais</a></button>
+                    </nav>
+                </div>
+            </aside>
+
         </div>
     </div>
 </body>

@@ -9,54 +9,80 @@
     <title> Atribuição de Variáveis </title>
 </head>
 <body>
-    <div class="menu_sobre">
-        <h1 id="titulo_bem_vindo"> Atribuição de Variáveis </h1>
-        <div class="modelo_conteudo">
-            <div class="conteudo">
-                <img src="../Img/Bem vindo.png">
-                <scroll-container>
-                    <p> É a ação de atribuir valores a variáveis em uma sequência ordenada de instruções. Isso é fundamental para armazenar e manipular dados em um programa.</p>
-                    <p> Ela ocorre de forma direta, uma após a outra, sem nenhuma condição ou iteração envolvida. Cada atribuição de variável é uma instrução independente que é executada em ordem sequencial.</p>
-                    <div class="area">
-                        <code>
-                            <div id="comentario">//Atribuindo valor a variavel1</div>
-                            <br>
-                            <div id="let">let</div> variavel1 <div id="resultante">=</div> valor1;
-                            <br>
-                            <br>
-                            <div id="comentario">//Atribuindo valor a variavel2</div>
-                            <br>
-                            <div id="let">let</div> variavel2 <div id="resultante">=</div> valor2;
-                        </code>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 450px;">Atribuição de Variáveis</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="../Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>É a ação de atribuir valores a variáveis em uma sequência ordenada de instruções. Isso é fundamental para armazenar e manipular dados em um programa.</p>
+                        
+                        <p>Ela ocorre de forma direta, uma após a outra, sem nenhuma condição ou iteração envolvida. Cada atribuição de variável é uma instrução independente que é executada em ordem sequencial.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="comentario">// Atribuindo valor a variavel1</span><br>
+                                <span class="keyword">let</span> variavel1 <span class="operador">=</span> valor1;<br><br>
+                                <span class="comentario">// Atribuindo valor a variavel2</span><br>
+                                <span class="keyword">let</span> variavel2 <span class="operador">=</span> valor2;
+                            </code>
+                        </div>
+
+                        <p><strong>'variavel1'</strong> e <strong>'variavel2'</strong> são os nomes das variáveis que você deseja atribuir valores.</p>
+                        <p><strong>'valor1'</strong> e <strong>'valor2'</strong> são os valores que você deseja atribuir às variáveis correspondentes.</p>
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="comentario">// Atribuindo o nome</span><br>
+                                <span class="keyword">let</span> nome <span class="operador">=</span> <span class="string">"Wallace"</span>;<br><br>
+                                <span class="comentario">// Atribuindo a idade</span><br>
+                                <span class="keyword">let</span> idade <span class="operador">=</span> <span class="numero">26</span>;<br><br>
+                                <span class="comentario">// Atribuindo a cidade</span><br>
+                                <span class="keyword">let</span> cidade <span class="operador">=</span> <span class="string">"Fortaleza"</span>;
+                            </code>
+                        </div>
+                        
+                        <p>As três variáveis acima (<strong>nome, idade e cidade</strong>) são atribuídas com valores (<strong>"Wallace" (String), 26 (Number) e "Fortaleza" (String)</strong>) em uma sequência ordenada de instruções. Cada atribuição de variável é executada de forma sequencial, uma após a outra.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_statements.asp" target="_blank" id="link">Atribuição de variáveis</a>
+                        </p>
                     </div>
-                    <p style="display: inline-block;"><b>'variavel1'</b> e <b>'variavel2'</b> são os nomes das variáveis que você deseja atribuir valores</p>
-                    <p style="display: inline-block;"><b>'valor1'</b> e <b>'valor2'</b> são os valores que você deseja atribuir às variáveis correspondentes</p>
-                    <p style="display: inline-block;">Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
-                    <div class="area">
-                        <code>
-                            <div id="comentario">//Atribuindo o nome</div>
-                            <br>
-                            <div id="let">let</div> nome <div id="resultante">=</div> <div id="string">"Wallace"</div>; 
-                            <br>
-                            <br>
-                            <div id="comentario">//Atribuindo a idade</div>
-                            <br>
-                            <div id="let">let</div> idade <div id="resultante">=</div> <div id="valor">26</div> 
-                            <br>
-                            <br>
-                            <div id="comentario">//Atribuindo a cidade</div>
-                            <br>
-                            <div id="let">let</div> cidade <div id="resultante">=</div> <div id="string">"Fortaleza"</div> 
-                            <br>    
-                        </code>
-                    </div>
-                    <p style="display: inline-block;">As três variáveis acima (<b>nome, idade e cidade</b>) são atribuídas com valores (<b>"Wallace"(string), 26(Number) e "Fortaleza"(String)</b>) em uma sequencia ordenada de instruções. Cada atribuição de variável é executada de forma sequencial, uma após a outra. </v></p>
-                    <br>
-                    <p><b>Para saber mais sobre o assunto:</b> <a href="https://www.w3schools.com/js/js_statements.asp" target="_blank" id="link"> Atribuição de variaveis </a> </p>
-                </scroll-container>    
-            </div>
-            <button id="anterior"><a href="Conteudo.html"><p>Anterior</p></a></button>
-            <button id="proxima"><a href="Pratica.html"><p>Pratica</p></a></button>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 100px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto ativo"><a href="./Atribuicao_Variaveis.html">Atribuição</a></button>
+                        <button class="btn-assunto"><a href="./Operacoes_matematicas.html">Operações</a></button>
+                        <button class="btn-assunto"><a href="./Interatividade_Usuário.html">Interatividade</a></button>
+                        <button class="btn-assunto"><a href="./Contatenacao_Strings.html">Concatenação</a></button>
+                        <button class="btn-assunto"><a href="./Estruturas_Sequenciais.html">Sequenciais</a></button>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </div>
 </body>

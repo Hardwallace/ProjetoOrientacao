@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Definições de Variaveis </title>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 460px;">Definições de Variáveis</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;" >
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Menus/Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                    <p>Uma variável é um espaço na memória do computador usado para armazenar um valor. Esse valor pode ser alterado ao longo da execução do programa.</p>
+                    
+                    <div class="editor-codigo">
+                        <code>
+                            <span class="comentario">//Declarando variáveis com let</span><br><br>
+                            <span class="keyword">let</span> nome <span class="operador">=</span> <span class="string">"Wallace"</span>;<br>
+                            <span class="keyword">let</span> idade <span class="operador">=</span> <span class="numero">26</span>;<br>
+                            <span class="keyword">let</span> altura <span class="operador">=</span> <span class="numero">1.75</span>;<br><br>
+                            <span class="comentario">//Exibindo os valores no console</span><br><br>
+                            <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"Nome: "</span>, nome);<br>
+                            <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"Idade: "</span>, idade);<br>
+                            <span class="console-obj">Console</span>.<span class="metodo">log</span>(<span class="string">"Altura: "</span>, altura);
+                        </code>
+                    </div>
+
+                    <p class="legenda">Aqui, nome, idade e altura são variáveis que armazenam diferentes tipos de dados.</p>
+                    
+                    <p>No JavaScript, podemos declarar variáveis usando três palavras-chave principais:</p>
+                    
+                    <ul class="lista-definicoes">
+                        <li> <strong>Var</strong> = Forma antiga, evita-se usar hoje em dia;</li>
+                        <li> <strong>Let</strong> = Recomendada para valores que podem mudar;</li>
+                        <li> <strong>Const</strong> = Usada para valores que não podem ser alteradas.</li>
+                    </ul>
+
+                    <div class="editor-codigo">
+                        <code>
+                            <span class="keyword">var</span> nome1 <span class="operador">=</span> <span class="string">"Pedro"</span>; <span class="comentario">//Pode ser redeclarado (evitar usar)</span><br><br>
+                            <span class="keyword">let</span> nome2 <span class="operador">=</span> <span class="string">"Lucas"</span>; <span class="comentario">//Pode mudar de valor</span><br><br>
+                            <span class="keyword">const</span> nome3 <span class="operador">=</span> <span class="string">"Lucas"</span>; <span class="comentario">//Não pode ser alterado</span>
+                        </code>
+                    </div>
+
+                    <p class="dica"><strong>Dica:</strong> Use <code>let</code> para valores que podem mudar e <code>const</code> para valores fixos.</p>
+                    
+                    <p class="saiba-mais">
+                        <strong>Para saber mais sobre o assunto:</strong> 
+                        <a href="https://www.w3schools.com/js/js_variables.asp" target="_blank" id="link">Definições de variáveis</a>
+                    </p>
+                </div>
+            </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 140px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto ativo"><a href="Definicoes_Variaveis.html">Variáveis</a></button>
+                        <button class="btn-assunto"><a href="Console.log.html">Console.log()</a></button>
+                        <button class="btn-assunto"><a href="Alert.html">Alert()</a></button>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+
+</html>

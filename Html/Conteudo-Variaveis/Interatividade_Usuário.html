@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Interatividade com o usuário </title>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 390px;">Interatividade com o usuário</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="../../Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Menus/Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>É a capacidade de um programa de solicitar entrada do usuário e responder de acordo, seguindo uma sequência ordenada de instruções. Isso permite que o programa seja mais dinâmico e responsivo, pois pode se adaptar às entradas do usuário durante a execução.</p>
+                        
+                        <p>Geralmente ocorre de maneira sequencial, após outras instruções terem sido executadas. Isso significa que as solicitações de entrada do usuário e as ações correspondentes do programa são tratadas em uma ordem específica e previsível.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="comentario">//Saída de texto no console</span><br><br>
+                                <span class="keyword">let</span> entradaDoUsuario <span class="operador">=</span> <span class="funcao-console">prompt</span>(<span class="string">"mensagem de solicitação ao usuário"</span>);
+                            </code>
+                        </div>
+
+                        <p><strong>'prompt()'</strong> é uma função que exibe uma caixa de diálogo ao usuário com a mensagem especificada e permite que o usuário insira o valor.</p>
+                        <p><strong>'entradaDoUsuario'</strong> é a variável onde o valor inserido pelo usuário será armazenado.</p>
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="comentario">//Solicitando o nome</span><br>
+                                <span class="keyword">let</span> nome <span class="operador">=</span> <span class="funcao-console">prompt</span>(<span class="string">"Qual o seu nome?"</span>);<br><br>
+                                
+                                <span class="comentario">//Solicitando a idade</span><br>
+                                <span class="keyword">let</span> idade <span class="operador">=</span> <span class="funcao-console">prompt</span>(<span class="string">"Quantos anos voce tem?"</span>);<br><br>
+                                
+                                <span class="comentario">//Exibe o resultado após a interatividade do usuário</span><br>
+                                <span class="funcao-console">alert</span>(<span class="string">"Olá, "</span> <span class="operador">+</span> nome <span class="operador">+</span> <span class="string">"! Você tem "</span> <span class="operador">+</span> idade <span class="operador">+</span> <span class="string">" anos de idade."</span>);
+                            </code>
+                        </div>
+                        
+                        <p>O programa solicita ao usuário seu nome e idade por meio de caixas de diálogo de entrada (<strong>prompt()</strong>), armazena as respostas em variáveis (<strong>nome</strong> e <strong>idade</strong>) e então exibe uma mensagem de saudação e informações sobre o usuário por meio de um alerta (<strong>alert()</strong>). Essas interações ocorrem em uma sequência ordenada de instruções e o resultado será:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                Qual é o seu nome? <span class="valor-simulado">Wallace</span><br>
+                                Quantos anos você tem? <span class="valor-simulado">26</span><br>
+                                Olá, <span class="valor-simulado">Wallace!</span> você tem <span class="valor-simulado">26</span> anos de idade;
+                            </code>
+                        </div>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_syntax.asp" target="_blank" id="link">Interatividade com o usuário</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 100px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Atribuicao_Variaveis.html">Atribuição</a></button>
+                        <button class="btn-assunto"><a href="./Operacoes_matematicas.html">Operações</a></button>
+                        <button class="btn-assunto ativo"><a href="./Interatividade_Usuário.html">Interatividade</a></button>
+                        <button class="btn-assunto"><a href="./Contatenacao_Strings.html">Concatenação</a></button>
+                        <button class="btn-assunto"><a href="./Estruturas_Sequenciais.html">Sequenciais</a></button>
+                    </nav>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+</body>
+</html>

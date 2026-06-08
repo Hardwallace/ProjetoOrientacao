@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Estruturas Sequenciais </title>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 460px;">Estruturas Sequenciais</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="../../Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Menus/Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Instruções são executadas uma após a outra, em sequência. É a estrutura de programação mais básica e direta.</p>
+                        
+                        <p>É a exibição de mensagens, valores ou resultados no console do navegador ou no console do ambiente de execução JavaScript. Esta é uma técnica comum para depurar código, verificar valores de variáveis ou comunicar informações ao desenvolvedor ou usuário.</p>
+                        
+                        <p>É realizada utilizando a função <strong>console.log()</strong>, onde você passa os valores ou mensagens que deseja exibir entre parênteses. Esta função é parte do objeto console, que fornece uma variedade de métodos para saída de informações no console.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="comentario">//Saída de texto no console</span><br><br>
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Olá, mundo!"</span>); <span class="comentario">//Primeira instrução</span><br><br>
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Este é um exemplo de estrutura sequencial."</span>); <span class="comentario">//Segunda instrução</span>
+                            </code>
+                        </div>
+
+                        <p>No exemplo abaixo, vamos solicitar ao usuário que insira dois nomes e, em seguida, exibir esses nomes no console. Note que cada instrução é executada em sequência, ou seja, o programa pede o primeiro nome, depois o segundo e, por fim, exibe ambos.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="comentario">//Solicita o primeiro nome</span><br>
+                                <span class="keyword">let</span> nome1 <span class="operador">=</span> <span class="funcao-console">prompt</span>(<span class="string">"Digite o primeiro nome:"</span>);<br><br>
+                                
+                                <span class="comentario">//Solicita o segundo nome</span><br>
+                                <span class="keyword">let</span> nome2 <span class="operador">=</span> <span class="funcao-console">prompt</span>(<span class="string">"Digite o segundo nome:"</span>);<br><br>
+                                
+                                <span class="comentario">//Exibe os nomes no console</span><br>
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"O primeiro nome é: "</span> <span class="operador">+</span> nome1);<br>
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"O segundo nome é: "</span> <span class="operador">+</span> nome2);
+                            </code>
+                        </div>
+                        
+                        <p>O programa usa a função <strong>prompt()</strong> para receber os nomes do usuário.</p>
+                        <p>Cada nome é armazenado em uma variável (<strong>nome1</strong> e <strong>nome2</strong>) seguindo a ordem de execução.</p>
+                        <p>Por fim, os nomes são exibidos no console com a função <strong>console.log()</strong>.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/howto/howto_js_form_steps.asp" target="_blank" id="link">Estrutura sequencial</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 100px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Atribuicao_Variaveis.html">Atribuição</a></button>
+                        <button class="btn-assunto"><a href="./Operacoes_matematicas.html">Operações</a></button>
+                        <button class="btn-assunto"><a href="./Interatividade_Usuário.html">Interatividade</a></button>
+                        <button class="btn-assunto"><a href="./Contatenacao_Strings.html">Concatenação</a></button>
+                        <button class="btn-assunto ativo"><a href="./Estruturas_Sequenciais.html">Sequenciais</a></button>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

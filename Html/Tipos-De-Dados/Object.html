@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Object </title>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 620px;">Object</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Menus/Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Em JavaScript, um <strong>Object (objeto)</strong> é uma estrutura de dados que armazena pares de chave-valor. Ele permite organizar dados de forma mais estruturada e flexível.</p>
+                        
+                        <p>Os objetos são usados para representar entidades do mundo real, como um usuário, um carro, um produto, entre outros.</p>
+                        
+                        <p>A forma mais comum de se utilizar o <strong>Object</strong> é da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> pessoa <span class="operador">=</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade">nome</span>: <span class="string">"Wallace"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade">idade</span>: <span class="numero">26</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade">profissao</span>: <span class="string">"Desenvolvedor"</span><br>
+                                }; <span class="comentario">// Objeto com o nome pessoa</span><br><br>
+                                
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(pessoa);<br>
+                                <span class="comentario">// Exibe todo o objeto</span><br><br>
+                                
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(pessoa.nome);<br>
+                                <span class="comentario">// Exibe apenas o nome "Wallace"</span><br><br>
+                                
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(pessoa[<span class="string">"idade"</span>]);<br>
+                                <span class="comentario">// Exibe apenas a idade "26"</span>
+                            </code>
+                        </div>
+
+                        <p>Podemos acessar e alterar valores do objeto usando notação de <strong>ponto (.)</strong> ou <strong>notação de colchetes ([])</strong>.</p>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> produto <span class="operador">=</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade">nome</span>: <span class="string">"Notebook"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade">preco</span>: <span class="numero">3500</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade">estoque</span>: <span class="numero">10</span><br>
+                                }; <span class="comentario">// Objeto com o nome produto</span><br><br>
+                                
+                                produto.preco <span class="operador">=</span> <span class="numero">3200</span>;<br>
+                                produto[<span class="string">"estoque"</span>] <span class="operador">=</span> <span class="numero">8</span>;<br>
+                                <span class="comentario">// Alterando os valores do preco e estoque do objeto produto</span><br><br>
+                                
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(produto);<br>
+                                <span class="comentario">// Exibe todo o objeto</span><br><br>
+                                
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(produto.preco);<br>
+                                <span class="comentario">// Exibe o novo valor = 3200</span><br><br>
+                                
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(produto.estoque);<br>
+                                <span class="comentario">// Exibe o novo estoque = 8</span>
+                            </code>
+                        </div>
+
+                        <p>Podemos adicionar novas propriedades e também removê-las usando <strong>delete</strong>.</p>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> aluno <span class="operador">=</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade">nome</span>: <span class="string">"Joao"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="propriedade">curso</span>: <span class="string">"Matemática"</span><br>
+                                }; <span class="comentario">// Objeto com o nome aluno</span><br><br>
+                                
+                                aluno.nota <span class="operador">=</span> <span class="numero">9.5</span>; <span class="comentario">// Adicionando nova propriedade</span><br><br>
+                                
+                                <span class="keyword">delete</span> aluno.curso; <span class="comentario">// Removendo propriedade</span><br><br>
+                                
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(aluno);<br>
+                                <span class="comentario">// O resultado será { nome: "Joao", nota: 9.5 }</span>
+                            </code>
+                        </div>
+                        
+                        <p>Os <strong>objetos</strong> são essenciais em JavaScript, pois permitem armazenar e manipular dados de forma estruturada. Eles são a base para conceitos mais avançados como <strong>JSON</strong>, <strong>POO (Programação Orientada a Objetos)</strong> e <strong>APIs</strong>.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_objects.asp" target="_blank" id="link">Object</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Tipos_Dados.html">String</a></button>
+                        <button class="btn-assunto"><a href="./Number.html">Number</a></button>
+                        <button class="btn-assunto"><a href="./Boolean.html">Boolean</a></button>
+                        <button class="btn-assunto"><a href="./Array.html">Array</a></button>
+                        <button class="btn-assunto ativo"><a href="./Object.html">Object</a></button>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

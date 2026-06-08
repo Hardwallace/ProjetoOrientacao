@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Condicionais </title>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 600px;">Switch-Case</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Menus/Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Avalia uma expressão e executa blocos de código com base no valor da expressão.</p>
+                        
+                        <p>É uma instrução que permite testar o valor de uma expressão em relação a uma série de casos possíveis. Ele fornece uma maneira mais limpa e organizada de lidar com múltiplas condições do que vários <strong>‘if-else if-else’</strong> encadeados.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">switch</span> (expressao) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> <span class="numero">valor1</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de codigo a ser executado se a expressao for igual a valor1</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> <span class="numero">valor2</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de codigo a ser executado se a expressao for igual a valor2</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// E assim por diante...</span><br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">default</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de código a ser executado se nenhum dos casos anteriores for verdadeiro</span><br>
+                                }
+                            </code>
+                        </div>
+
+                        <p><strong>'expressao'</strong> é a expressão cujo valor será testado.</p>
+                        
+                        <p><strong>'valor1'</strong>, <strong>'valor2'</strong>, etc., são os valores possíveis que a expressão pode ter.</p>
+                        
+                        <p>Cada <strong>'case'</strong> define um caso possível, com um valor específico que a expressão pode assumir. Se a expressão for igual a um dos valores listados, o bloco de código correspondente será executado.</p>
+                        
+                        <p>O bloco <strong>'default'</strong> é opcional e é executado se nenhum dos casos anteriores for verdadeiro.</p>
+                        
+                        <p>O <strong>'break'</strong> é usado para sair do bloco <strong>'switch'</strong>, interrompendo a execução e evitando que os casos subsequentes sejam testados.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> diaDaSemana <span class="operador">=</span> <span class="numero">3</span>;<br>
+                                <span class="keyword">let</span> mensagem;<br><br>
+                                
+                                <span class="keyword">switch</span> (diaDaSemana) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> <span class="numero">1</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mensagem <span class="operador">=</span> <span class="string">"Hoje é segunda-feira."</span>;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> <span class="numero">2</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mensagem <span class="operador">=</span> <span class="string">"Hoje é terça-feira."</span>;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> <span class="numero">3</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mensagem <span class="operador">=</span> <span class="string">"Hoje é quarta-feira."</span>;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// E assim por diante...</span><br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">default</span>:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mensagem <span class="operador">=</span> <span class="string">"Dia inválido"</span>;<br>
+                                }<br><br>
+                                
+                                <span class="console-obj">console</span>.<span class="metodo">log</span>(mensagem);
+                            </code>
+                        </div>
+                        
+                        <p>O valor da variável <strong>'diaDaSemana'</strong> é testado em relação aos diferentes casos possíveis. Dependendo do valor, uma mensagem correspondente é atribuída à variável <strong>'mensagem'</strong>. Se o valor não corresponder a nenhum dos casos, a mensagem padrão <strong>"Dia inválido."</strong> será atribuída.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_switch.asp" target="_blank" id="link">Estrutura switch - case</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Condicionais.html">If</a></button>
+                        <button class="btn-assunto"><a href="./If-Else.html">If-Else</a></button>
+                        <button class="btn-assunto"><a href="./Else-If.html">Else-If</a></button>
+                        <button class="btn-assunto ativo"><a href="./Switch-Case.html">Switch-Case</a></button>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

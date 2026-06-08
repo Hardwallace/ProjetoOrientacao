@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Atribuição de Variáveis </title>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 450px;">Atribuição de Variáveis</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="../../Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Menus/Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>É a ação de atribuir valores a variáveis em uma sequência ordenada de instruções. Isso é fundamental para armazenar e manipular dados em um programa.</p>
+                        
+                        <p>Ela ocorre de forma direta, uma após a outra, sem nenhuma condição ou iteração envolvida. Cada atribuição de variável é uma instrução independente que é executada em ordem sequencial.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="comentario">// Atribuindo valor a variavel1</span><br>
+                                <span class="keyword">let</span> variavel1 <span class="operador">=</span> valor1;<br><br>
+                                <span class="comentario">// Atribuindo valor a variavel2</span><br>
+                                <span class="keyword">let</span> variavel2 <span class="operador">=</span> valor2;
+                            </code>
+                        </div>
+
+                        <p><strong>'variavel1'</strong> e <strong>'variavel2'</strong> são os nomes das variáveis que você deseja atribuir valores.</p>
+                        <p><strong>'valor1'</strong> e <strong>'valor2'</strong> são os valores que você deseja atribuir às variáveis correspondentes.</p>
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="comentario">// Atribuindo o nome</span><br>
+                                <span class="keyword">let</span> nome <span class="operador">=</span> <span class="string">"Wallace"</span>;<br><br>
+                                <span class="comentario">// Atribuindo a idade</span><br>
+                                <span class="keyword">let</span> idade <span class="operador">=</span> <span class="numero">26</span>;<br><br>
+                                <span class="comentario">// Atribuindo a cidade</span><br>
+                                <span class="keyword">let</span> cidade <span class="operador">=</span> <span class="string">"Fortaleza"</span>;
+                            </code>
+                        </div>
+                        
+                        <p>As três variáveis acima (<strong>nome, idade e cidade</strong>) são atribuídas com valores (<strong>"Wallace" (String), 26 (Number) e "Fortaleza" (String)</strong>) em uma sequência ordenada de instruções. Cada atribuição de variável é executada de forma sequencial, uma após a outra.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_statements.asp" target="_blank" id="link">Atribuição de variáveis</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 100px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto ativo"><a href="./Atribuicao_Variaveis.html">Atribuição</a></button>
+                        <button class="btn-assunto"><a href="./Operacoes_matematicas.html">Operações</a></button>
+                        <button class="btn-assunto"><a href="./Interatividade_Usuário.html">Interatividade</a></button>
+                        <button class="btn-assunto"><a href="./Contatenacao_Strings.html">Concatenação</a></button>
+                        <button class="btn-assunto"><a href="./Estruturas_Sequenciais.html">Sequenciais</a></button>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

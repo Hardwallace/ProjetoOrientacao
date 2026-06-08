@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Estrutura de repetição </title>
+</head>
+
+<body>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 640px;">While</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Menus/Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Executa um bloco de código enquanto uma condição especificada for verdadeira. A <strong>condição</strong> é verificada antes da execução do bloco.</p>
+                        
+                        <p>O <strong>"While"</strong> é uma estrutura de controle de fluxo que permite executar um bloco de código repetidamente enquanto uma condição especificada for verdadeira. Ele continua a executar o bloco de código enquanto a condição fornecida for verdadeira e é interrompido assim que a condição se torna falsa. O loop <strong>"While"</strong> é útil quando você não sabe exatamente quantas vezes deseja repetir o código, mas sabe a condição que deve ser atendida para continuar a execução.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">while</span> (condição) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de código a ser repetido</span><br>
+                                }
+                            </code>
+                        </div>
+
+                        <p>A <strong>"condição"</strong> é avaliada antes de cada iteração do loop. Se for verdadeira, o bloco de código é executado; caso contrário, o loop é encerrado.</p>
+                        
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> i <span class="operador">=</span> <span class="numero">1</span>;<br>
+                                <span class="keyword">while</span> (i <span class="operador">&lt;=</span> <span class="numero">5</span>) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(i);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                                }
+                            </code>
+                        </div>
+                        
+                        <p>A variável <strong>"i"</strong> é inicializada com o valor <strong>1</strong> fora do loop.</p>
+                        
+                        <p>A <strong>"condição"</strong> verifica se <strong>"i"</strong> é menor ou igual a <strong>5</strong>.</p>
+                        
+                        <p>O bloco de código dentro do loop imprime o valor de <strong>"i"</strong> no console e, em seguida, incrementa <strong>"i"</strong> em <strong>1</strong> após cada iteração.</p>
+                        
+                        <p>O loop <strong>"While"</strong> continuará a ser executado enquanto <strong>"i"</strong> for <strong>menor ou igual a 5</strong>, portanto, os números de <strong>1 a 5</strong> serão impressos no console.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_loop_while.asp" target="_blank" id="link">Estrutura while</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Tópicos</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Repeticao.html">For</a></button>
+                        <button class="btn-assunto ativo"><a href="./While.html">While</a></button>
+                        <button class="btn-assunto"><a href="./Do-While.html">Do-While</a></button>
+                        <button class="btn-assunto"><a href="./For-In.html">For-In</a></button>
+                        <button class="btn-assunto"><a href="./For-Of.html">For-Of</a></button>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

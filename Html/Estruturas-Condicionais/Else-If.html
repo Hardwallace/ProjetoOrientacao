@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title> Condicionais </title>
+</head>
+<body>
+    <div class="container-principal">
+        <header class="header-app">
+            <h1 id="titulo_bem_vindo" style="margin-left: 620px;">Else-If</h1>
+        </header>
+
+        <div class="layout-conteudo">
+            <aside class="coluna-esquerda">
+                <div class="avatar-container" style="position: relative; top: 160px;">
+                    <img src="/Img/Bem vindo.png" alt="Mascote Educativo" class="avatar-img">
+                </div>
+                <button id="anterior" class="btn-navegacao" style="position: relative; top: 150px; left: 45px;">
+                    <a href="../Menus/Conteudo.html">Anterior</a>
+                </button>
+            </aside>
+
+            <main class="conteudo-principal">
+                <div class="card-educativo">
+                    <div class="scroll-interno">
+                        <p>Permite avaliar várias condições sequencialmente.</p>
+                        
+                        <p>É uma extensão do <strong>if</strong> e <strong>else</strong>, permitindo lidar com múltiplas condições de forma encadeada. Isso é útil quando há mais de duas possibilidades de resultado com base em diferentes condições.</p>
+                        
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">if</span> (condicao1) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de codigo a ser executado se a condição1 for verdadeira</span><br>
+                                } <span class="keyword">else if</span> (condicao2) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de codigo a ser executado se a condição2 for verdadeira</span><br>
+                                } <span class="keyword">else</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comentario">// Bloco de codigo a ser executado se nenhuma das condições anteriores for verdadeira</span><br>
+                                }
+                            </code>
+                        </div>
+
+                        <p><strong>'condicao1'</strong>, <strong>'condicao2'</strong>, etc., são as expressões que serão avaliadas. Se a <strong>primeira condição for verdadeira</strong>, o bloco de código dentro do primeiro <strong>'if'</strong> será executado. Se não, e a <strong>segunda condição for verdadeira</strong>, o bloco de código dentro do <strong>'else if'</strong> correspondente será executado. Se <strong>nenhuma das condições for verdadeira</strong>, o bloco de código dentro do <strong>'else'</strong> será executado.</p>
+                        
+                        <p>O <strong>'else if'</strong> permite verificar várias condições em sequência, evitando aninhar vários blocos <strong>'if-else'</strong>, o que pode tornar o código mais legível.</p>
+                        
+                        <p>Um exemplo prático sobre o escopo explicado acima pode ser representado da seguinte maneira:</p>
+
+                        <div class="editor-codigo">
+                            <code>
+                                <span class="keyword">let</span> nota <span class="operador">=</span> <span class="numero">75</span>;<br><br>
+                                
+                                <span class="keyword">if</span> (nota <span class="operador">&gt;=</span> <span class="numero">90</span>) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Aprovado com conceito A"</span>);<br>
+                                } <span class="keyword">else if</span> (nota <span class="operador">&gt;=</span> <span class="numero">80</span>) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Aprovado com o conceito B"</span>);<br>
+                                } <span class="keyword">else if</span> (nota <span class="operador">&gt;=</span> <span class="numero">70</span>) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Aprovado com o conceito C"</span>);<br>
+                                } <span class="keyword">else</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="console-obj">console</span>.<span class="metodo">log</span>(<span class="string">"Reprovado"</span>);<br>
+                                }
+                            </code>
+                        </div>
+                        
+                        <p>A nota do aluno é verificada em várias faixas, e uma mensagem é exibida com base no conceito correspondente. Se a nota for <strong>maior ou igual a 90</strong>, o aluno é <strong>aprovado com conceito A</strong>. Se não, mas for <strong>maior ou igual a 80</strong>, ele é <strong>aprovado com conceito B</strong>, e assim por diante. Se <strong>nenhuma das condições for atendida</strong>, o aluno é <strong>reprovado</strong>.</p>
+                        
+                        <p class="saiba-mais">
+                            <strong>Para saber mais sobre o assunto:</strong> 
+                            <a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank" id="link">Estrutura Else - IF</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alinhamento-proxima" style="position: relative; right: 340px;">
+                    <button id="proxima" class="btn proxima" style="border-color:mediumslateblue;">
+                        <a href="../Blocos/Pratica_alert.html" style="color: white;">Vamos Praticar?</a>
+                    </button>
+                </div>
+            </main>
+
+            <aside class="coluna-direita" style="position: relative; top: 110px;">
+                <div class="card-topicos">
+                    <h2>Topics</h2>
+                    <nav class="menu-assuntos">
+                        <button class="btn-assunto"><a href="./Condicionais.html">If</a></button>
+                        <button class="btn-assunto"><a href="./If-Else.html">If-Else</a></button>
+                        <button class="btn-assunto ativo"><a href="./Else-If.html">Else-If</a></button>
+                        <button class="btn-assunto"><a href="./Switch-Case.html">Switch-Case</a></button>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

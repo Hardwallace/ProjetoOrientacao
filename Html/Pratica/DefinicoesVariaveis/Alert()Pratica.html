@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../Css/pratica.css">
+    <title>Meu Console JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="editor-side">
+            <h2 style="margin-left: 14px; padding: 10px; ">Faça um algoritmo no qual precisa utilizar <code>alert()</code> para mostrar o seu nome</h2>
+            <div class="label">Editor JavaScript</div>
+            <textarea id="js-input"></textarea>
+        </div>
+
+        <div class="preview-side">
+            <div class="toolbar" style="padding: 8.3px;">
+                <button class="btn-run" onclick="runJavaScript()" style="margin-left: 7px;">Executar Código ❯</button>
+                <button class="btn-clear" onclick="clearConsole()">Limpar Saída</button>
+                <button id="anterior" class="btn-clear"><a href="../../Menus/Conteudo.html">Anterior</a></button>
+            </div>
+            <div class="label">Resultado (Console)</div>
+            <div id="console-output" class="console-output"></div>
+        </div>
+    </div>
+<script src="../../../Js/Pratica.js"></script>
+</body>
+</html>

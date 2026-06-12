@@ -104,3 +104,8 @@ textarea {
 .error {
     color: #f48771;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}

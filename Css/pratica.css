@@ -17,6 +17,8 @@ body {
     padding: 10px 20px;
     display: flex;
     gap: 10px;
+    position: relative;
+    top: 370px;
 }
         
 .btn-run {
@@ -84,9 +86,11 @@ textarea {
 }
 
 .preview-side {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    width: 49.78%;
+    height: 46.50%;
+    position: relative;
+    top: 430px;
+    right: 958px;
     background-color: #292727;
 }
 
@@ -109,3 +113,57 @@ a{
     text-decoration: none;
     color: white;
 }
+
+.editor-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+/* Os dois precisam ter estilos idênticos para as letras se encaixarem perfeitamente */
+#js-input, #js-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 4px;
+}
+
+#js-input {
+    background: transparent;
+    color: transparent; /* OBRIGATÓRIO: Esconde o texto padrão para não sobrepor a cor */
+    caret-color: #ffffff; /* Mostra a barrinha de digitação piscando */
+    z-index: 2; /* Fica na frente */
+    resize: none;
+    border: 1px solid #3c3c3c;
+    outline: none;
+}
+
+#js-highlight {
+    background-color: #252526;
+    color: #ffffff;
+    z-index: 1; /* Fica atrás */
+    overflow: hidden; 
+    pointer-events: none; /* Ignora cliques para você conseguir clicar no textarea */
+}
+
+/* Cores das palavras */
+.keyword-yellow { color: #ffdf00; font-weight: bold; }
+
+.keyword-purple {
+    color: #c586c0; /* Tom lilás/roxo do VS Code */
+    font-weight: bold;
+}
+
+.text-green {
+    color: #6a9955; /* Tom verde para strings */
+}
+

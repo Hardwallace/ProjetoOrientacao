@@ -9,21 +9,28 @@
 <body>
     <div class="container">
         <div class="editor-side">
-            <h2 style="margin-left: 14px; padding: 10px; ">Faça um algoritmo no qual precisa utilizar <code>alert()</code> para mostrar o seu nome</h2>
-            <div class="label">Editor JavaScript</div>
-            <textarea id="js-input"></textarea>
-        </div>
-
+        <div class="label">Editor JavaScript</div>
+        <h2 id="questao">Faça um algoritmo no qual precisa utilizar <code>alert()</code> para mostrar o seu nome</h2>
+    <!-- Este container junta os dois elementos -->
+    <div class="editor-container">
+        <!-- A div de trás recebe o HTML colorido -->
+        <div id="js-highlight" aria-hidden="true"></div>
+        <!-- O textarea da frente aceita a digitação normal -->
+        <textarea id="js-input" spellcheck="false"></textarea>
+    </div>
+</div>
         <div class="preview-side">
+            <div class="label">Resultado (Console)</div>
+            <div id="console-output" class="console-output"></div>
             <div class="toolbar" style="padding: 8.3px;">
                 <button class="btn-run" onclick="runJavaScript()" style="margin-left: 7px;">Executar Código ❯</button>
                 <button class="btn-clear" onclick="clearConsole()">Limpar Saída</button>
                 <button id="anterior" class="btn-clear"><a href="../../Menus/Conteudo.html">Anterior</a></button>
             </div>
-            <div class="label">Resultado (Console)</div>
-            <div id="console-output" class="console-output"></div>
         </div>
+        
     </div>
+            
 <script src="../../../Js/Pratica.js"></script>
 </body>
 </html>

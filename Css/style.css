@@ -1,7 +1,9 @@
 body{
-    background-color: rgb(252, 252, 251);
+    background-color: var(--bg-color);
     margin: 0;
     -webkit-text-size-adjust: 100%;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 *{
@@ -1004,4 +1006,5 @@ a{
     .seta{
         margin-left: 0;
     }
+
 }

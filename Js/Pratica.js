@@ -35,22 +35,17 @@ const jsHighlight = document.getElementById('js-highlight');
 function updateHighlight() {
     let text = jsInput.value;
 
-    // 1. Protege o HTML tratando os sinais de < e >
     text = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
     text = text.replace(/(["'])(?:(?=(\\?))\2.)*?\1/g, '<span class="text-green">$&</span>');
 
-    // 2. Mantém o 'let', 'const', 'var' em amarelo
     text = text.replace(/\b(let|const|var)\b/g, '<span class="keyword-yellow">$1</span>');
 
-    // 3. NOVO: Identifica 'alert', 'console' e 'log' e aplica o lilás
     text = text.replace(/\b(alert|console|log)\b/g, '<span class="keyword-purple">$1</span>');
 
-    // Alimenta a div de fundo com o texto formatado
     jsHighlight.innerHTML = text + (text.endsWith('\n') ? '\n' : '');
 }
 
-// Mantém os ouvintes de eventos (listeners) iguais
 jsInput.addEventListener('input', updateHighlight);
 jsInput.addEventListener('scroll', () => {
     jsHighlight.scrollTop = jsInput.scrollTop;
